@@ -13,7 +13,7 @@ Flask
 ### Installing and Running
 
 1. Open Terminal
-2. Clone reposity with <code>clone https://github.com/aar118/SeeFood-Server.git</code>
+2. Clone repository with <code>clone https://github.com/aar118/SeeFood-Server.git</code>
 3. Navigate to folder SeeFood-Server
 4. Clone SeeFood reposity and follow directions from https://github.com/wsu-wacs/seefood.git
 5. Give permissions to server.sh using <code>chmod +x server.sh</code>
