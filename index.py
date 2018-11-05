@@ -49,9 +49,25 @@ def upload_file():
 def fileToDB(file):
     # Get the name from the image that was submitted through POST request
     name = secure_filename(file.filename)
+
+    # Check to see if the file is already in the database
+    sql = "SELECT COUNT(*) FROM IMAGES \
+        WHERE NAME = '%s'" % \
+        (name)
+    
+    try:
+        cursor.execute(sql)
+        (results,) = cursor.fetchone()
+        if results != 0:
+            return "Duplicate"
+    except (MySQLdb.Error, MySQLdb.Warning) as e:
+        print(e)
+        return "fileToDB Failed"
+
     # Create a string path to the location where we want the image
     ### A unique ID is appended due to duplicate filenames. This needs revised
-    path = './files/' + generate_id() + "_" + name
+    name = generate_id() + "_" + name
+    path = './files/' + name
     # SQL query
     sql = "INSERT INTO IMAGES(NAME, PATH) \
         VALUES ('%s', '%s')" % \
