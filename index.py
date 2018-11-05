@@ -1,9 +1,14 @@
 from flask import Flask
 from flask import request
+from flask import send_file
 import random
 import string
 from werkzeug.utils import secure_filename
-import MySQLdb 
+import MySQLdb
+import zipfile
+from io import BytesIO
+import time
+from os.path import basename
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -30,8 +35,14 @@ def upload_file():
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
-        paths = filesFromDB()
-        return paths
+        images = filesFromDB()
+        memory_file = BytesIO()
+        with zipfile.ZipFile(memory_file, 'w') as zf:
+            for individualFile in images:
+                zf.write(individualFile[1], basename(individualFile[1]))
+        zf.close()
+        memory_file.seek(0)
+        return send_file(memory_file, attachment_filename='seefood_images.zip', as_attachment=True)
     db.close()
 
 # Puts files in DB
@@ -71,11 +82,11 @@ def filesFromDB():
         results = cursor.fetchall()
         
         # Loops through every image from query and creates a list of paths
-        paths = []
+        images = []
         for image in results:
             #name = image[0]
-            paths.append(image[1])
-        return paths
+            images.append([image[0], image[1]])
+        return images
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
         return "filesFromDB Failed"
