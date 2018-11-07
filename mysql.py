@@ -1,6 +1,6 @@
 import MySQLdb
 
-db = MySQLdb.connect("localhost", "root", "")
+db = MySQLdb.connect("127.0.0.1", "root", "")
 cursor = db.cursor()
 sql = "CREATE DATABASE IF NOT EXISTS SeeFood;"
 cursor.execute(sql)

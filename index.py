@@ -9,11 +9,13 @@ import zipfile
 from io import BytesIO
 import time
 from os.path import basename
+import os
+from find_food import findFood
 
 # Initialize the Flask application
 app = Flask(__name__)
 # Initialize the MySQL database connection
-db = MySQLdb.connect("localhost", "root", "", "SeeFood")
+db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
 # Initialize a cursor to perform SQL queries
 cursor = db.cursor()
 
@@ -30,8 +32,10 @@ def upload_file():
         # This gets the file from the POST request
         f = request.files['the_file']
         # Sends file to DB and saves in images/ folder
-        results = fileToDB(f)
-        return results
+        path = fileToDB(f)
+        results = findFood(path)
+        #print results
+        return "{0} {1}".format(results[0], results[1])
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
@@ -51,21 +55,22 @@ def fileToDB(file):
     name = secure_filename(file.filename)
 
     # Check to see if the file is already in the database
-    sql = "SELECT COUNT(*) FROM IMAGES \
+    sql = "SELECT PATH FROM IMAGES \
         WHERE NAME = '%s'" % \
         (name)
     
     try:
         cursor.execute(sql)
-        (results,) = cursor.fetchone()
-        if results != 0:
-            return "Duplicate"
+        results = cursor.fetchone()
+        #print(type(results))
+        if results is not None:
+            return results[0]
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
         return "fileToDB Failed"
 
     # Create a string path to the location where we want the image
-    ### A unique ID is appended due to duplicate filenames. This needs revised
+    # A unique ID is appended due to duplicate filenames. This needs revised
     name = generate_id() + "_" + name
     path = './files/' + name
     # SQL query
@@ -80,12 +85,12 @@ def fileToDB(file):
         db.commit()
         # This saves the image to the path location
         file.save(path)
-        return "True"
+        return path
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         # Oh no we fucked up, gotta roll back to a previous DB version
         db.rollback()
         print(e)
-        return "False"
+        return "IT BROKE YO"
 
 # Gets files from DB
 def filesFromDB():

@@ -1,5 +1,4 @@
 source activate py27
-sudo apt-get install python-dev default-libmysqlclient-dev
 sudo apt-get install mysql-server
 pip install MySQL-python
 pip install Flask
