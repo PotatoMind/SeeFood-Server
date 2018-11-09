@@ -1,5 +1,5 @@
 __pycache__/
 files/*.png
 files/*.jpeg
+*.pyc
 seefood/
-index.pyc
