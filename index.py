@@ -110,3 +110,6 @@ def filesFromDB():
 # A function to generate 7 random characters
 def generate_id(size=7, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
+
+if __name__ == '__main__':
+    app.run()
