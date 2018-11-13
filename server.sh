@@ -1,4 +1,4 @@
-source activate py27
+source activate base
 sudo apt-get install python-dev default-libmysqlclient-dev
 sudo apt-get install libmysqlclient-dev
 sudo apt-get install mysql-server

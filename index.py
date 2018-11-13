@@ -13,19 +13,19 @@ import os
 from find_food import findFood
 
 # Initialize the Flask application
-app = Flask(__name__)
+application = Flask(__name__)
 # Initialize the MySQL database connection
 db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
 # Initialize a cursor to perform SQL queries
 cursor = db.cursor()
 
 # Main page of the website
-@app.route("/")
+@application.route("/")
 def index():
     return "Hello World!"
 
 # Upload GET and POST request for images
-@app.route('/upload', methods=['GET', 'POST'])
+@application.route('/upload', methods=['GET', 'POST'])
 def upload_file():
     # If it's a POST request, then we are putting something in the DB
     if request.method == 'POST':
@@ -58,7 +58,7 @@ def fileToDB(file):
     sql = "SELECT PATH FROM IMAGES \
         WHERE NAME = '%s'" % \
         (name)
-    
+
     try:
         cursor.execute(sql)
         results = cursor.fetchone()
@@ -72,12 +72,12 @@ def fileToDB(file):
     # Create a string path to the location where we want the image
     # A unique ID is appended due to duplicate filenames. This needs revised
     name = generate_id() + "_" + name
-    path = './files/' + name
+    path = 'files/' + name
     # SQL query
     sql = "INSERT INTO IMAGES(NAME, PATH) \
         VALUES ('%s', '%s')" % \
         (name, path)
-    
+
     try:
         # This executes the SQL query
         cursor.execute(sql)
@@ -101,7 +101,7 @@ def filesFromDB():
         cursor.execute(sql)
         # If we are expecting results, we have to felt them after we query!
         results = cursor.fetchall()
-        
+
         # Loops through every image from query and creates a list of paths
         images = []
         for image in results:
@@ -117,4 +117,4 @@ def generate_id(size=7, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
 if __name__ == '__main__':
-    app.run()
+    application.run(host='0.0.0.0')
