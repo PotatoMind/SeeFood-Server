@@ -34,8 +34,7 @@ def upload_file():
         # Sends file to DB and saves in images/ folder
         path = fileToDB(f)
         results = findFood(path)
-        #print results
-        return "{0} {1}".format(results[0], results[1])
+	return results
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
