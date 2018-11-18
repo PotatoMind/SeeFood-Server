@@ -1,1685 +1,48 @@
-[2018-11-09 06:07:22 +0000] [12004] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:07:22 +0000] [12004] [INFO] Listening at: http://127.0.0.1:8000 (12004)
-[2018-11-09 06:07:22 +0000] [12004] [INFO] Using worker: sync
-[2018-11-09 06:07:22 +0000] [12008] [INFO] Booting worker with pid: 12008
-[2018-11-09 06:07:22 +0000] [12010] [INFO] Booting worker with pid: 12010
-[2018-11-09 06:07:22 +0000] [12008] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:22 +0000] [12008] [INFO] Worker exiting (pid: 12008)
-[2018-11-09 06:07:22 +0000] [12011] [INFO] Booting worker with pid: 12011
-[2018-11-09 06:07:22 +0000] [12012] [INFO] Booting worker with pid: 12012
-[2018-11-09 06:07:22 +0000] [12010] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:22 +0000] [12010] [INFO] Worker exiting (pid: 12010)
-[2018-11-09 06:07:22 +0000] [12011] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:22 +0000] [12011] [INFO] Worker exiting (pid: 12011)
-[2018-11-09 06:07:22 +0000] [12012] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:07:22 +0000] [12012] [INFO] Worker exiting (pid: 12012)
-[2018-11-09 06:07:23 +0000] [12016] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:07:23 +0000] [12016] [INFO] Listening at: http://127.0.0.1:8000 (12016)
-[2018-11-09 06:07:23 +0000] [12016] [INFO] Using worker: sync
-[2018-11-09 06:07:23 +0000] [12020] [INFO] Booting worker with pid: 12020
-[2018-11-09 06:07:23 +0000] [12020] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:23 +0000] [12020] [INFO] Worker exiting (pid: 12020)
-[2018-11-09 06:07:23 +0000] [12022] [INFO] Booting worker with pid: 12022
-[2018-11-09 06:07:23 +0000] [12023] [INFO] Booting worker with pid: 12023
-[2018-11-09 06:07:23 +0000] [12022] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:23 +0000] [12022] [INFO] Worker exiting (pid: 12022)
-[2018-11-09 06:07:23 +0000] [12023] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:23 +0000] [12023] [INFO] Worker exiting (pid: 12023)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:07:26 +0000] [12028] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:07:26 +0000] [12028] [INFO] Listening at: http://127.0.0.1:8000 (12028)
-[2018-11-09 06:07:26 +0000] [12028] [INFO] Using worker: sync
-[2018-11-09 06:07:26 +0000] [12032] [INFO] Booting worker with pid: 12032
-[2018-11-09 06:07:26 +0000] [12033] [INFO] Booting worker with pid: 12033
-[2018-11-09 06:07:26 +0000] [12032] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:26 +0000] [12032] [INFO] Worker exiting (pid: 12032)
-[2018-11-09 06:07:26 +0000] [12036] [INFO] Booting worker with pid: 12036
-[2018-11-09 06:07:26 +0000] [12033] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:26 +0000] [12037] [INFO] Booting worker with pid: 12037
-[2018-11-09 06:07:26 +0000] [12033] [INFO] Worker exiting (pid: 12033)
-[2018-11-09 06:07:26 +0000] [12036] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:26 +0000] [12036] [INFO] Worker exiting (pid: 12036)
-[2018-11-09 06:07:26 +0000] [12037] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:26 +0000] [12037] [INFO] Worker exiting (pid: 12037)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:07:29 +0000] [12040] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:07:29 +0000] [12040] [INFO] Listening at: http://127.0.0.1:8000 (12040)
-[2018-11-09 06:07:29 +0000] [12040] [INFO] Using worker: sync
-[2018-11-09 06:07:29 +0000] [12044] [INFO] Booting worker with pid: 12044
-[2018-11-09 06:07:29 +0000] [12044] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:29 +0000] [12044] [INFO] Worker exiting (pid: 12044)
-[2018-11-09 06:07:29 +0000] [12046] [INFO] Booting worker with pid: 12046
-[2018-11-09 06:07:30 +0000] [12046] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:07:30 +0000] [12046] [INFO] Worker exiting (pid: 12046)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:08:46 +0000] [12123] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:08:46 +0000] [12123] [INFO] Listening at: http://127.0.0.1:8000 (12123)
-[2018-11-09 06:08:46 +0000] [12123] [INFO] Using worker: sync
-[2018-11-09 06:08:46 +0000] [12127] [INFO] Booting worker with pid: 12127
-[2018-11-09 06:08:46 +0000] [12128] [INFO] Booting worker with pid: 12128
-[2018-11-09 06:08:46 +0000] [12129] [INFO] Booting worker with pid: 12129
-[2018-11-09 06:08:46 +0000] [12127] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:46 +0000] [12127] [INFO] Worker exiting (pid: 12127)
-[2018-11-09 06:08:46 +0000] [12132] [INFO] Booting worker with pid: 12132
-[2018-11-09 06:08:46 +0000] [12128] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:46 +0000] [12128] [INFO] Worker exiting (pid: 12128)
-[2018-11-09 06:08:46 +0000] [12129] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:46 +0000] [12129] [INFO] Worker exiting (pid: 12129)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:08:48 +0000] [12135] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:08:48 +0000] [12135] [INFO] Listening at: http://127.0.0.1:8000 (12135)
-[2018-11-09 06:08:48 +0000] [12135] [INFO] Using worker: sync
-[2018-11-09 06:08:48 +0000] [12139] [INFO] Booting worker with pid: 12139
-[2018-11-09 06:08:48 +0000] [12139] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:48 +0000] [12139] [INFO] Worker exiting (pid: 12139)
-[2018-11-09 06:08:48 +0000] [12135] [INFO] Shutting down: Master
-[2018-11-09 06:08:48 +0000] [12135] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:08:50 +0000] [12143] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:08:50 +0000] [12143] [INFO] Listening at: http://127.0.0.1:8000 (12143)
-[2018-11-09 06:08:50 +0000] [12143] [INFO] Using worker: sync
-[2018-11-09 06:08:50 +0000] [12147] [INFO] Booting worker with pid: 12147
-[2018-11-09 06:08:50 +0000] [12147] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:50 +0000] [12147] [INFO] Worker exiting (pid: 12147)
-[2018-11-09 06:08:50 +0000] [12149] [INFO] Booting worker with pid: 12149
-[2018-11-09 06:08:50 +0000] [12149] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:50 +0000] [12149] [INFO] Worker exiting (pid: 12149)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:08:53 +0000] [12151] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:08:53 +0000] [12151] [INFO] Listening at: http://127.0.0.1:8000 (12151)
-[2018-11-09 06:08:53 +0000] [12151] [INFO] Using worker: sync
-[2018-11-09 06:08:53 +0000] [12155] [INFO] Booting worker with pid: 12155
-[2018-11-09 06:08:54 +0000] [12155] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:54 +0000] [12155] [INFO] Worker exiting (pid: 12155)
-[2018-11-09 06:08:54 +0000] [12157] [INFO] Booting worker with pid: 12157
-[2018-11-09 06:08:54 +0000] [12157] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:08:54 +0000] [12157] [INFO] Worker exiting (pid: 12157)
-Traceback (most recent call last):
-  File "/opt/anaconda2/bin/gunicorn", line 11, in <module>
-    sys.exit(run())
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
-    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 223, in run
-    super(Application, self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
-    Arbiter(self).run()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 232, in run
-    self.halt(reason=inst.reason, exit_status=inst.exit_status)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 345, in halt
-    self.stop()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
-    time.sleep(0.1)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
-    self.reap_workers()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
-    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
-gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
-[2018-11-09 06:20:11 +0000] [12432] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:20:11 +0000] [12432] [INFO] Listening at: http://127.0.0.1:8000 (12432)
-[2018-11-09 06:20:11 +0000] [12432] [INFO] Using worker: sync
-[2018-11-09 06:20:11 +0000] [12436] [INFO] Booting worker with pid: 12436
-[2018-11-09 06:20:11 +0000] [12436] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:20:11 +0000] [12436] [INFO] Worker exiting (pid: 12436)
-[2018-11-09 06:20:11 +0000] [12432] [INFO] Shutting down: Master
-[2018-11-09 06:20:11 +0000] [12432] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:20:12 +0000] [12438] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:20:12 +0000] [12438] [INFO] Listening at: http://127.0.0.1:8000 (12438)
-[2018-11-09 06:20:12 +0000] [12438] [INFO] Using worker: sync
-[2018-11-09 06:20:12 +0000] [12442] [INFO] Booting worker with pid: 12442
-[2018-11-09 06:20:12 +0000] [12442] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:20:12 +0000] [12442] [INFO] Worker exiting (pid: 12442)
-[2018-11-09 06:20:12 +0000] [12438] [INFO] Shutting down: Master
-[2018-11-09 06:20:12 +0000] [12438] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:20:15 +0000] [12449] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:20:15 +0000] [12449] [INFO] Listening at: http://127.0.0.1:8000 (12449)
-[2018-11-09 06:20:15 +0000] [12449] [INFO] Using worker: sync
-[2018-11-09 06:20:15 +0000] [12453] [INFO] Booting worker with pid: 12453
-[2018-11-09 06:20:15 +0000] [12453] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:20:15 +0000] [12453] [INFO] Worker exiting (pid: 12453)
-[2018-11-09 06:20:15 +0000] [12449] [INFO] Shutting down: Master
-[2018-11-09 06:20:15 +0000] [12449] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:20:18 +0000] [12455] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:20:18 +0000] [12455] [INFO] Listening at: http://127.0.0.1:8000 (12455)
-[2018-11-09 06:20:18 +0000] [12455] [INFO] Using worker: sync
-[2018-11-09 06:20:18 +0000] [12459] [INFO] Booting worker with pid: 12459
-[2018-11-09 06:20:18 +0000] [12459] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:20:18 +0000] [12459] [INFO] Worker exiting (pid: 12459)
-[2018-11-09 06:20:18 +0000] [12455] [INFO] Shutting down: Master
-[2018-11-09 06:20:18 +0000] [12455] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:24:22 +0000] [12559] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:24:22 +0000] [12559] [INFO] Listening at: http://127.0.0.1:8000 (12559)
-[2018-11-09 06:24:22 +0000] [12559] [INFO] Using worker: sync
-[2018-11-09 06:24:22 +0000] [12562] [INFO] Booting worker with pid: 12562
-[2018-11-09 06:24:22 +0000] [12562] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:24:22 +0000] [12562] [INFO] Worker exiting (pid: 12562)
-[2018-11-09 06:24:22 +0000] [12559] [INFO] Shutting down: Master
-[2018-11-09 06:24:22 +0000] [12559] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:24:24 +0000] [12564] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:24:24 +0000] [12564] [INFO] Listening at: http://127.0.0.1:8000 (12564)
-[2018-11-09 06:24:24 +0000] [12564] [INFO] Using worker: sync
-[2018-11-09 06:24:24 +0000] [12567] [INFO] Booting worker with pid: 12567
-[2018-11-09 06:24:24 +0000] [12567] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:24:24 +0000] [12567] [INFO] Worker exiting (pid: 12567)
-[2018-11-09 06:24:24 +0000] [12564] [INFO] Shutting down: Master
-[2018-11-09 06:24:24 +0000] [12564] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:24:26 +0000] [12574] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:24:26 +0000] [12574] [INFO] Listening at: http://127.0.0.1:8000 (12574)
-[2018-11-09 06:24:26 +0000] [12574] [INFO] Using worker: sync
-[2018-11-09 06:24:26 +0000] [12577] [INFO] Booting worker with pid: 12577
-[2018-11-09 06:24:26 +0000] [12577] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:24:26 +0000] [12577] [INFO] Worker exiting (pid: 12577)
-[2018-11-09 06:24:26 +0000] [12574] [INFO] Shutting down: Master
-[2018-11-09 06:24:26 +0000] [12574] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:24:29 +0000] [12579] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:24:29 +0000] [12579] [INFO] Listening at: http://127.0.0.1:8000 (12579)
-[2018-11-09 06:24:29 +0000] [12579] [INFO] Using worker: sync
-[2018-11-09 06:24:29 +0000] [12582] [INFO] Booting worker with pid: 12582
-[2018-11-09 06:24:29 +0000] [12582] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:24:29 +0000] [12582] [INFO] Worker exiting (pid: 12582)
-[2018-11-09 06:24:29 +0000] [12579] [INFO] Shutting down: Master
-[2018-11-09 06:24:29 +0000] [12579] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:30:35 +0000] [12734] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:30:35 +0000] [12734] [INFO] Listening at: http://127.0.0.1:8000 (12734)
-[2018-11-09 06:30:35 +0000] [12734] [INFO] Using worker: sync
-[2018-11-09 06:30:35 +0000] [12738] [INFO] Booting worker with pid: 12738
-[2018-11-09 06:30:35 +0000] [12738] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:30:35 +0000] [12738] [INFO] Worker exiting (pid: 12738)
-[2018-11-09 06:30:36 +0000] [12734] [INFO] Shutting down: Master
-[2018-11-09 06:30:36 +0000] [12734] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:30:37 +0000] [12740] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:30:37 +0000] [12740] [INFO] Listening at: http://127.0.0.1:8000 (12740)
-[2018-11-09 06:30:37 +0000] [12740] [INFO] Using worker: sync
-[2018-11-09 06:30:37 +0000] [12744] [INFO] Booting worker with pid: 12744
-[2018-11-09 06:30:37 +0000] [12744] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:30:37 +0000] [12744] [INFO] Worker exiting (pid: 12744)
-[2018-11-09 06:30:37 +0000] [12740] [INFO] Shutting down: Master
-[2018-11-09 06:30:37 +0000] [12740] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:30:39 +0000] [12751] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:30:39 +0000] [12751] [INFO] Listening at: http://127.0.0.1:8000 (12751)
-[2018-11-09 06:30:39 +0000] [12751] [INFO] Using worker: sync
-[2018-11-09 06:30:39 +0000] [12755] [INFO] Booting worker with pid: 12755
-[2018-11-09 06:30:39 +0000] [12755] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:30:39 +0000] [12755] [INFO] Worker exiting (pid: 12755)
-[2018-11-09 06:30:39 +0000] [12751] [INFO] Shutting down: Master
-[2018-11-09 06:30:39 +0000] [12751] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:30:43 +0000] [12758] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:30:43 +0000] [12758] [INFO] Listening at: http://127.0.0.1:8000 (12758)
-[2018-11-09 06:30:43 +0000] [12758] [INFO] Using worker: sync
-[2018-11-09 06:30:43 +0000] [12762] [INFO] Booting worker with pid: 12762
-[2018-11-09 06:30:43 +0000] [12762] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:30:43 +0000] [12762] [INFO] Worker exiting (pid: 12762)
-[2018-11-09 06:30:43 +0000] [12758] [INFO] Shutting down: Master
-[2018-11-09 06:30:43 +0000] [12758] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:32:02 +0000] [12783] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:32:02 +0000] [12783] [INFO] Listening at: http://127.0.0.1:8000 (12783)
-[2018-11-09 06:32:02 +0000] [12783] [INFO] Using worker: sync
-[2018-11-09 06:32:02 +0000] [12787] [INFO] Booting worker with pid: 12787
-[2018-11-09 06:32:02 +0000] [12787] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:32:02 +0000] [12787] [INFO] Worker exiting (pid: 12787)
-[2018-11-09 06:32:02 +0000] [12783] [INFO] Shutting down: Master
-[2018-11-09 06:32:02 +0000] [12783] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:32:04 +0000] [12794] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:32:04 +0000] [12794] [INFO] Listening at: http://127.0.0.1:8000 (12794)
-[2018-11-09 06:32:04 +0000] [12794] [INFO] Using worker: sync
-[2018-11-09 06:32:04 +0000] [12798] [INFO] Booting worker with pid: 12798
-[2018-11-09 06:32:04 +0000] [12798] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:32:04 +0000] [12798] [INFO] Worker exiting (pid: 12798)
-[2018-11-09 06:32:04 +0000] [12794] [INFO] Shutting down: Master
-[2018-11-09 06:32:04 +0000] [12794] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:32:06 +0000] [12800] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:32:06 +0000] [12800] [INFO] Listening at: http://127.0.0.1:8000 (12800)
-[2018-11-09 06:32:06 +0000] [12800] [INFO] Using worker: sync
-[2018-11-09 06:32:06 +0000] [12804] [INFO] Booting worker with pid: 12804
-[2018-11-09 06:32:06 +0000] [12804] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:32:06 +0000] [12804] [INFO] Worker exiting (pid: 12804)
-[2018-11-09 06:32:06 +0000] [12800] [INFO] Shutting down: Master
-[2018-11-09 06:32:06 +0000] [12800] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:32:09 +0000] [12807] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:32:09 +0000] [12807] [INFO] Listening at: http://127.0.0.1:8000 (12807)
-[2018-11-09 06:32:09 +0000] [12807] [INFO] Using worker: sync
-[2018-11-09 06:32:09 +0000] [12811] [INFO] Booting worker with pid: 12811
-[2018-11-09 06:32:09 +0000] [12811] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:32:09 +0000] [12811] [INFO] Worker exiting (pid: 12811)
-[2018-11-09 06:32:09 +0000] [12807] [INFO] Shutting down: Master
-[2018-11-09 06:32:09 +0000] [12807] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:39:16 +0000] [13056] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:39:16 +0000] [13056] [INFO] Listening at: http://127.0.0.1:8000 (13056)
-[2018-11-09 06:39:16 +0000] [13056] [INFO] Using worker: sync
-[2018-11-09 06:39:16 +0000] [13059] [INFO] Booting worker with pid: 13059
-[2018-11-09 06:39:16 +0000] [13059] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:39:16 +0000] [13059] [INFO] Worker exiting (pid: 13059)
-[2018-11-09 06:39:16 +0000] [13056] [INFO] Shutting down: Master
-[2018-11-09 06:39:16 +0000] [13056] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:39:17 +0000] [13061] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:39:17 +0000] [13061] [INFO] Listening at: http://127.0.0.1:8000 (13061)
-[2018-11-09 06:39:17 +0000] [13061] [INFO] Using worker: sync
-[2018-11-09 06:39:17 +0000] [13064] [INFO] Booting worker with pid: 13064
-[2018-11-09 06:39:17 +0000] [13064] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:39:17 +0000] [13064] [INFO] Worker exiting (pid: 13064)
-[2018-11-09 06:39:17 +0000] [13061] [INFO] Shutting down: Master
-[2018-11-09 06:39:17 +0000] [13061] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:39:20 +0000] [13071] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:39:20 +0000] [13071] [INFO] Listening at: http://127.0.0.1:8000 (13071)
-[2018-11-09 06:39:20 +0000] [13071] [INFO] Using worker: sync
-[2018-11-09 06:39:20 +0000] [13074] [INFO] Booting worker with pid: 13074
-[2018-11-09 06:39:20 +0000] [13074] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:39:20 +0000] [13074] [INFO] Worker exiting (pid: 13074)
-[2018-11-09 06:39:20 +0000] [13071] [INFO] Shutting down: Master
-[2018-11-09 06:39:20 +0000] [13071] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:39:23 +0000] [13077] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:39:23 +0000] [13077] [INFO] Listening at: http://127.0.0.1:8000 (13077)
-[2018-11-09 06:39:23 +0000] [13077] [INFO] Using worker: sync
-[2018-11-09 06:39:23 +0000] [13080] [INFO] Booting worker with pid: 13080
-[2018-11-09 06:39:23 +0000] [13080] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 7, in <module>
-    import MySQLdb
-ImportError: No module named MySQLdb
-[2018-11-09 06:39:23 +0000] [13080] [INFO] Worker exiting (pid: 13080)
-[2018-11-09 06:39:23 +0000] [13077] [INFO] Shutting down: Master
-[2018-11-09 06:39:23 +0000] [13077] [INFO] Reason: Worker failed to boot.
-[2018-11-09 06:41:00 +0000] [13101] [INFO] Starting gunicorn 19.9.0
-[2018-11-09 06:41:00 +0000] [13101] [INFO] Listening at: http://127.0.0.1:8000 (13101)
-[2018-11-09 06:41:00 +0000] [13101] [INFO] Using worker: sync
-[2018-11-09 06:41:00 +0000] [13105] [INFO] Booting worker with pid: 13105
+[2018-11-18 05:12:15 +0000] [10139] [INFO] Listening at: http://127.0.0.1:8000 (10139)
+[2018-11-18 05:12:15 +0000] [10139] [INFO] Using worker: sync
+[2018-11-18 05:12:15 +0000] [10143] [INFO] Booting worker with pid: 10143
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-09 06:41:02.964659: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-09 06:41:02.965515: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-09 19:19:52,534] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 46, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-13 00:36:46,207] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 46, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-13 23:40:02,058] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = findFood(path)
-  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
-    image = Image.open(image_path).convert('RGB')
-  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
-    fp = builtins.open(filename, "rb")
-IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
-[2018-11-13 23:41:09,999] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = findFood(path)
-  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
-    image = Image.open(image_path).convert('RGB')
-  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
-    fp = builtins.open(filename, "rb")
-IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
-[2018-11-13 23:49:28 +0000] [13101] [INFO] Handling signal: term
-[2018-11-13 23:49:28 +0000] [13105] [INFO] Worker exiting (pid: 13105)
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-[2018-11-13 23:49:29 +0000] [13101] [INFO] Shutting down: Master
-[2018-11-13 23:49:31 +0000] [28451] [INFO] Starting gunicorn 19.9.0
-[2018-11-13 23:49:31 +0000] [28451] [INFO] Listening at: http://127.0.0.1:8000 (28451)
-[2018-11-13 23:49:31 +0000] [28451] [INFO] Using worker: sync
-[2018-11-13 23:49:31 +0000] [28455] [INFO] Booting worker with pid: 28455
+2018-11-18 05:12:16.557261: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:12:16.558535: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:27:43 +0000] [10139] [INFO] Handling signal: term
+[2018-11-18 05:27:43 +0000] [10143] [INFO] Worker exiting (pid: 10143)
+looking for food in files/CMTKPBF.png
+looking for food in files/CMTKPBF.png
+looking for food in files/NU91NXP.png
+looking for food in files/NU91NXP.png
+[2018-11-18 05:27:43 +0000] [10139] [INFO] Shutting down: Master
+[2018-11-18 05:27:45 +0000] [10271] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:27:45 +0000] [10271] [INFO] Listening at: http://127.0.0.1:8000 (10271)
+[2018-11-18 05:27:45 +0000] [10271] [INFO] Using worker: sync
+[2018-11-18 05:27:45 +0000] [10275] [INFO] Booting worker with pid: 10275
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-13 23:49:33.349819: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-13 23:49:33.350641: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-14 00:57:17 +0000] [28451] [INFO] Handling signal: term
-[2018-11-14 00:57:17 +0000] [28455] [INFO] Worker exiting (pid: 28455)
-looking for food in files/3TAVWBR_loaded_fries.png
-[ 2.6241589 -0.5593945]
-Oh yes... I see food! :D
-looking for food in files/7D9NMLF_loaded_fries.png
-[ 2.6241589 -0.5593945]
-Oh yes... I see food! :D
-looking for food in files/EMFKQ4M_lobster.jpg
-[ 3.7548828 -1.6814774]
-Oh yes... I see food! :D
-looking for food in files/EX80WWH_poodle.png
-[0.21178657 1.8502414 ]
-No food here... :( 
-looking for food in files/ASMVI05_cookies.png
-[1.9905628  0.07598221]
-Oh yes... I see food! :D
-looking for food in files/G596QIU_high_school_lunch.jpg
-[ 2.464446   -0.39532638]
-Oh yes... I see food! :D
-looking for food in files/S8CPQNH_high_school_lunch_room.jpg
-[1.3773241  0.68766713]
-Oh yes... I see food! :D
-[2018-11-14 00:57:17 +0000] [28451] [INFO] Shutting down: Master
-[2018-11-14 00:57:19 +0000] [28682] [INFO] Starting gunicorn 19.9.0
-[2018-11-14 00:57:19 +0000] [28682] [INFO] Listening at: http://127.0.0.1:8000 (28682)
-[2018-11-14 00:57:19 +0000] [28682] [INFO] Using worker: sync
-[2018-11-14 00:57:19 +0000] [28686] [INFO] Booting worker with pid: 28686
+2018-11-18 05:27:46.496315: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:27:46.497550: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:30:36 +0000] [10271] [INFO] Handling signal: term
+[2018-11-18 05:30:36 +0000] [10275] [INFO] Worker exiting (pid: 10275)
+[2018-11-18 05:30:37 +0000] [10271] [INFO] Shutting down: Master
+[2018-11-18 05:30:38 +0000] [10432] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:30:38 +0000] [10432] [INFO] Listening at: http://127.0.0.1:8000 (10432)
+[2018-11-18 05:30:38 +0000] [10432] [INFO] Using worker: sync
+[2018-11-18 05:30:38 +0000] [10436] [INFO] Booting worker with pid: 10436
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-14 00:57:21.711042: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-14 00:57:21.711857: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-15 23:04:03,377] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = findFood(path)
-  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
-    image = Image.open(image_path).convert('RGB')
-  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
-    fp = builtins.open(filename, "rb")
-IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
-[2018-11-15 23:18:54,122] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-15 23:26:13,023] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-15 23:29:53,060] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
-    with zipfile.ZipFile(memory_file, 'w') as zf:
-IndexError: string index out of range
-[2018-11-15 23:30:03 +0000] [28682] [INFO] Handling signal: term
-[2018-11-15 23:30:03 +0000] [28686] [INFO] Worker exiting (pid: 28686)
-looking for food in files/7SRVJP2_high_school_lunch_room.jpg
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-(2006, 'MySQL server has gone away')
-[2018-11-15 23:30:03 +0000] [28682] [INFO] Shutting down: Master
-[2018-11-15 23:30:05 +0000] [32206] [INFO] Starting gunicorn 19.9.0
-[2018-11-15 23:30:05 +0000] [32206] [INFO] Listening at: http://127.0.0.1:8000 (32206)
-[2018-11-15 23:30:05 +0000] [32206] [INFO] Using worker: sync
-[2018-11-15 23:30:05 +0000] [32210] [INFO] Booting worker with pid: 32210
+2018-11-18 05:30:39.727134: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:30:39.728416: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:39:05 +0000] [10432] [INFO] Handling signal: term
+[2018-11-18 05:39:05 +0000] [10436] [INFO] Worker exiting (pid: 10436)
+[2018-11-18 05:39:05 +0000] [10432] [INFO] Shutting down: Master
+[2018-11-18 05:39:06 +0000] [10586] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:39:06 +0000] [10586] [INFO] Listening at: http://127.0.0.1:8000 (10586)
+[2018-11-18 05:39:06 +0000] [10586] [INFO] Using worker: sync
+[2018-11-18 05:39:06 +0000] [10590] [INFO] Booting worker with pid: 10590
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-15 23:30:08.096599: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-15 23:30:08.102773: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-16 17:17:34,620] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = findFood(path)
-  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
-    image = Image.open(image_path).convert('RGB')
-  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
-    fp = builtins.open(filename, "rb")
-IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
-[2018-11-18 04:31:55 +0000] [32206] [INFO] Handling signal: term
-[2018-11-18 04:31:55 +0000] [32210] [INFO] Worker exiting (pid: 32210)
-looking for food in files/GE4MID2_loaded_fries.png
-looking for food in files/CT86K1P_loaded_fries.png
-looking for food in files/TNXCNMY_loaded_fries.png
-looking for food in files/68TROGK_IMG_20181110_174027.jpg
-looking for food in files/87PA3ZS_IMG_20181110_174041.jpg
-looking for food in files/XDW1NWM_IMG_20181110_174027.jpg
-looking for food in files/9U983U6_IMG_20181110_174027.jpg
-looking for food in files/H2G81XO_IMG_20181110_174027.jpg
-looking for food in files/EXFY1XF_IMG_20181110_174048.jpg
-looking for food in files/U2P36PN_IMG_20181110_174027.jpg
-looking for food in files/1KAOJ5K_IMG_20181110_174041.jpg
-looking for food in files/OP3ZOJX_IMG_20181110_174041.jpg
-looking for food in files/GSBS5HT_IMG_20181110_174027.jpg
-looking for food in files/JGHQ0QR_IMG_20181110_174048.jpg
-looking for food in files/6CRI7CO_IMG_20181110_174035.jpg
-looking for food in files/YOLQDM5_IMG_20181110_174035.jpg
-looking for food in files/H34L5XB_IMG_20181110_174048.jpg
-looking for food in files/7WOULKX_IMG_20181110_174041.jpg
-looking for food in files/VTT0XTX_JPEG_20181115_203344_1493956210753652537.jpg
-looking for food in files/8JK9LW3_IMG_20181110_174048.jpg
-looking for food in files/0ELGDZF_IMG_20181110_174035.jpg
-looking for food in files/TGUQ482_IMG_20181110_174048.jpg
-looking for food in files/J8UNPQC_JPEG_20181115_210527_4964493301690007310.jpg
-looking for food in files/QXP1UB3_IMG_20181112_200416.jpg
-looking for food in files/0KDEEQQ_IMG_20181106_211611.jpg
-looking for food in files/18SHY88_IMG_20181017_171031.jpg
-looking for food in files/81A085Q_JPEG_20181115_211526_9066295213723975340.jpg
-looking for food in files/0Y1THJ9_IMG_20181031_205717.jpg
-looking for food in files/U60SPDF_JPEG_20181115_212154_6749204932022673920.jpg
-looking for food in files/9XOS4U5_IMG_20181031_205717.jpg
-looking for food in files/S7CQLYW_JPEG_20181115_214319_4775849922163972539.jpg
-looking for food in files/DEIH6DX_JPEG_20181115_214435_1036811307323246265.jpg
-(2006, 'MySQL server has gone away')
-[2018-11-18 04:31:56 +0000] [32206] [INFO] Shutting down: Master
-[2018-11-18 04:53:20 +0000] [9346] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:53:20 +0000] [9346] [INFO] Listening at: http://127.0.0.1:8000 (9346)
-[2018-11-18 04:53:20 +0000] [9346] [INFO] Using worker: sync
-[2018-11-18 04:53:20 +0000] [9350] [INFO] Booting worker with pid: 9350
-[2018-11-18 04:53:20 +0000] [9350] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 37
-    return results
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:53:20 +0000] [9350] [INFO] Worker exiting (pid: 9350)
-[2018-11-18 04:53:20 +0000] [9346] [INFO] Shutting down: Master
-[2018-11-18 04:53:20 +0000] [9346] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:53:21 +0000] [9351] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:53:21 +0000] [9351] [INFO] Listening at: http://127.0.0.1:8000 (9351)
-[2018-11-18 04:53:21 +0000] [9351] [INFO] Using worker: sync
-[2018-11-18 04:53:21 +0000] [9355] [INFO] Booting worker with pid: 9355
-[2018-11-18 04:53:21 +0000] [9355] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 37
-    return results
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:53:21 +0000] [9355] [INFO] Worker exiting (pid: 9355)
-[2018-11-18 04:53:21 +0000] [9351] [INFO] Shutting down: Master
-[2018-11-18 04:53:21 +0000] [9351] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:53:24 +0000] [9356] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:53:24 +0000] [9356] [INFO] Listening at: http://127.0.0.1:8000 (9356)
-[2018-11-18 04:53:24 +0000] [9356] [INFO] Using worker: sync
-[2018-11-18 04:53:24 +0000] [9360] [INFO] Booting worker with pid: 9360
-[2018-11-18 04:53:24 +0000] [9360] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 37
-    return results
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:53:24 +0000] [9360] [INFO] Worker exiting (pid: 9360)
-[2018-11-18 04:53:24 +0000] [9356] [INFO] Shutting down: Master
-[2018-11-18 04:53:24 +0000] [9356] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:53:27 +0000] [9361] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:53:27 +0000] [9361] [INFO] Listening at: http://127.0.0.1:8000 (9361)
-[2018-11-18 04:53:27 +0000] [9361] [INFO] Using worker: sync
-[2018-11-18 04:53:27 +0000] [9365] [INFO] Booting worker with pid: 9365
-[2018-11-18 04:53:27 +0000] [9365] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 37
-    return results
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:53:27 +0000] [9365] [INFO] Worker exiting (pid: 9365)
-[2018-11-18 04:53:27 +0000] [9361] [INFO] Shutting down: Master
-[2018-11-18 04:53:27 +0000] [9361] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:57:30 +0000] [9398] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:57:30 +0000] [9398] [INFO] Listening at: http://127.0.0.1:8000 (9398)
-[2018-11-18 04:57:30 +0000] [9398] [INFO] Using worker: sync
-[2018-11-18 04:57:30 +0000] [9402] [INFO] Booting worker with pid: 9402
-[2018-11-18 04:57:30 +0000] [9402] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43
-    if images == "No results":
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:57:30 +0000] [9402] [INFO] Worker exiting (pid: 9402)
-[2018-11-18 04:57:30 +0000] [9398] [INFO] Shutting down: Master
-[2018-11-18 04:57:30 +0000] [9398] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:57:32 +0000] [9408] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:57:32 +0000] [9408] [INFO] Listening at: http://127.0.0.1:8000 (9408)
-[2018-11-18 04:57:32 +0000] [9408] [INFO] Using worker: sync
-[2018-11-18 04:57:32 +0000] [9412] [INFO] Booting worker with pid: 9412
-[2018-11-18 04:57:32 +0000] [9412] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43
-    if images == "No results":
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:57:32 +0000] [9412] [INFO] Worker exiting (pid: 9412)
-[2018-11-18 04:57:32 +0000] [9408] [INFO] Shutting down: Master
-[2018-11-18 04:57:32 +0000] [9408] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:57:34 +0000] [9413] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:57:34 +0000] [9413] [INFO] Listening at: http://127.0.0.1:8000 (9413)
-[2018-11-18 04:57:34 +0000] [9413] [INFO] Using worker: sync
-[2018-11-18 04:57:34 +0000] [9417] [INFO] Booting worker with pid: 9417
-[2018-11-18 04:57:34 +0000] [9417] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43
-    if images == "No results":
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:57:34 +0000] [9417] [INFO] Worker exiting (pid: 9417)
-[2018-11-18 04:57:34 +0000] [9413] [INFO] Shutting down: Master
-[2018-11-18 04:57:34 +0000] [9413] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:57:37 +0000] [9418] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:57:37 +0000] [9418] [INFO] Listening at: http://127.0.0.1:8000 (9418)
-[2018-11-18 04:57:37 +0000] [9418] [INFO] Using worker: sync
-[2018-11-18 04:57:37 +0000] [9422] [INFO] Booting worker with pid: 9422
-[2018-11-18 04:57:37 +0000] [9422] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43
-    if images == "No results":
-    ^
-IndentationError: unexpected indent
-[2018-11-18 04:57:37 +0000] [9422] [INFO] Worker exiting (pid: 9422)
-[2018-11-18 04:57:37 +0000] [9418] [INFO] Shutting down: Master
-[2018-11-18 04:57:37 +0000] [9418] [INFO] Reason: Worker failed to boot.
-[2018-11-18 04:58:55 +0000] [9445] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 04:58:55 +0000] [9445] [INFO] Listening at: http://127.0.0.1:8000 (9445)
-[2018-11-18 04:58:55 +0000] [9445] [INFO] Using worker: sync
-[2018-11-18 04:58:55 +0000] [9449] [INFO] Booting worker with pid: 9449
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 04:58:57.808173: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 04:58:57.809250: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 04:59:04,491] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 35, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 94, in fileToDB
-    (name, path, scores[0,0], scores[0,1])
-TypeError: not all arguments converted during string formatting
-[2018-11-18 05:02:38 +0000] [9445] [INFO] Handling signal: term
-[2018-11-18 05:02:38 +0000] [9449] [INFO] Worker exiting (pid: 9449)
-looking for food in files/22UAXRN
-[2018-11-18 05:02:39 +0000] [9445] [INFO] Shutting down: Master
-[2018-11-18 05:02:40 +0000] [9569] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:02:40 +0000] [9569] [INFO] Listening at: http://127.0.0.1:8000 (9569)
-[2018-11-18 05:02:40 +0000] [9569] [INFO] Using worker: sync
-[2018-11-18 05:02:40 +0000] [9573] [INFO] Booting worker with pid: 9573
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:02:42.881091: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:02:42.881909: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:03:39 +0000] [9569] [INFO] Handling signal: term
-[2018-11-18 05:03:39 +0000] [9573] [INFO] Worker exiting (pid: 9573)
-looking for food in files/2YI6K7U
-[2018-11-18 05:03:39 +0000] [9569] [INFO] Shutting down: Master
-[2018-11-18 05:03:41 +0000] [9679] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:03:41 +0000] [9679] [INFO] Listening at: http://127.0.0.1:8000 (9679)
-[2018-11-18 05:03:41 +0000] [9679] [INFO] Using worker: sync
-[2018-11-18 05:03:41 +0000] [9683] [INFO] Booting worker with pid: 9683
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:03:42.717729: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:03:42.718555: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:03:50,210] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 35, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 113, in fileToDB
-    if np.argmax(scores) == 1:
-NameError: global name 'np' is not defined
-[2018-11-18 05:04:29 +0000] [9679] [INFO] Handling signal: term
-[2018-11-18 05:04:29 +0000] [9683] [INFO] Worker exiting (pid: 9683)
-looking for food in files/VE547Q8
-looking for food in files/VE547Q8
-[2018-11-18 05:04:29 +0000] [9679] [INFO] Shutting down: Master
-[2018-11-18 05:04:30 +0000] [9791] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:04:30 +0000] [9791] [INFO] Listening at: http://127.0.0.1:8000 (9791)
-[2018-11-18 05:04:30 +0000] [9791] [INFO] Using worker: sync
-[2018-11-18 05:04:30 +0000] [9795] [INFO] Booting worker with pid: 9795
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:04:31.997662: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:04:31.998891: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:04:44,517] ERROR in app: Exception on /upload [GET]
+2018-11-18 05:39:07.875440: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:39:07.876656: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:39:20,371] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -1692,23 +55,11 @@ Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/ubuntu/SeeFood-Server/index.py", line 43, in upload_file
-    db.close()
-ProgrammingError: closing a closed connection
-[2018-11-18 05:05:55 +0000] [9791] [INFO] Handling signal: term
-[2018-11-18 05:05:55 +0000] [9795] [INFO] Worker exiting (pid: 9795)
-looking for food in files/QQI0IVJ
-looking for food in files/QQI0IVJ
-(0, '')
-[2018-11-18 05:05:55 +0000] [9791] [INFO] Shutting down: Master
-[2018-11-18 05:05:57 +0000] [9902] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:05:57 +0000] [9902] [INFO] Listening at: http://127.0.0.1:8000 (9902)
-[2018-11-18 05:05:57 +0000] [9902] [INFO] Using worker: sync
-[2018-11-18 05:05:57 +0000] [9906] [INFO] Booting worker with pid: 9906
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:05:58.170343: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:05:58.171630: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:06:08,845] ERROR in app: Exception on /upload [GET]
+    images = filesFromDB(minRow, maxRow)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 138, in filesFromDB
+    (minRow, maxRow)
+TypeError: %d format: a number is required, not NoneType
+[2018-11-18 05:39:26,633] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -1720,32 +71,133 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 41, in upload_file
-    images = filesFromDB()
-  File "/home/ubuntu/SeeFood-Server/index.py", line 147, in filesFromDB
-    images.append([image[0], image[1], Image[2], Image[3]])
-NameError: global name 'Image' is not defined
-[2018-11-18 05:06:53 +0000] [9902] [INFO] Handling signal: term
-[2018-11-18 05:06:53 +0000] [9906] [INFO] Worker exiting (pid: 9906)
-looking for food in files/WU7FRZX
-looking for food in files/WU7FRZX
-[2018-11-18 05:06:54 +0000] [9902] [INFO] Shutting down: Master
-[2018-11-18 05:06:55 +0000] [10013] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:06:55 +0000] [10013] [INFO] Listening at: http://127.0.0.1:8000 (10013)
-[2018-11-18 05:06:55 +0000] [10013] [INFO] Using worker: sync
-[2018-11-18 05:06:55 +0000] [10017] [INFO] Booting worker with pid: 10017
+  File "/home/ubuntu/SeeFood-Server/index.py", line 43, in upload_file
+    images = filesFromDB(minRow, maxRow)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 138, in filesFromDB
+    (minRow, maxRow)
+TypeError: %d format: a number is required, not NoneType
+[2018-11-18 05:41:39 +0000] [10586] [INFO] Handling signal: term
+[2018-11-18 05:41:39 +0000] [10590] [INFO] Worker exiting (pid: 10590)
+[2018-11-18 05:41:39 +0000] [10586] [INFO] Shutting down: Master
+[2018-11-18 05:41:41 +0000] [10695] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:41:41 +0000] [10695] [INFO] Listening at: http://127.0.0.1:8000 (10695)
+[2018-11-18 05:41:41 +0000] [10695] [INFO] Using worker: sync
+[2018-11-18 05:41:41 +0000] [10699] [INFO] Booting worker with pid: 10699
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-18 05:06:56.754269: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:06:56.755492: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:12:13 +0000] [10013] [INFO] Handling signal: term
-[2018-11-18 05:12:13 +0000] [10017] [INFO] Worker exiting (pid: 10017)
-[2018-11-18 05:12:14 +0000] [10013] [INFO] Shutting down: Master
-[2018-11-18 05:12:15 +0000] [10139] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:12:15 +0000] [10139] [INFO] Listening at: http://127.0.0.1:8000 (10139)
-[2018-11-18 05:12:15 +0000] [10139] [INFO] Using worker: sync
-[2018-11-18 05:12:15 +0000] [10143] [INFO] Booting worker with pid: 10143
+2018-11-18 05:41:42.459862: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:41:42.461072: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:41:45,758] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 53, in upload_file
+    zf.write(individualFile[1], basename(individualFile[1]))
+IndexError: string index out of range
+[2018-11-18 05:42:55 +0000] [10695] [INFO] Handling signal: term
+[2018-11-18 05:42:55 +0000] [10699] [INFO] Worker exiting (pid: 10699)
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
+[2018-11-18 05:42:55 +0000] [10695] [INFO] Shutting down: Master
+[2018-11-18 05:42:57 +0000] [10804] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:42:57 +0000] [10804] [INFO] Listening at: http://127.0.0.1:8000 (10804)
+[2018-11-18 05:42:57 +0000] [10804] [INFO] Using worker: sync
+[2018-11-18 05:42:57 +0000] [10808] [INFO] Booting worker with pid: 10808
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-18 05:12:16.557261: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:12:16.558535: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2018-11-18 05:42:58.146036: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:42:58.147842: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:43:01,568] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 53, in upload_file
+    zf.write(individualFile[1], basename(individualFile[1]))
+IndexError: string index out of range
+[2018-11-18 05:44:08 +0000] [10804] [INFO] Handling signal: term
+[2018-11-18 05:44:08 +0000] [10808] [INFO] Worker exiting (pid: 10808)
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
+[2018-11-18 05:44:09 +0000] [10804] [INFO] Shutting down: Master
+[2018-11-18 05:44:10 +0000] [10914] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:44:10 +0000] [10914] [INFO] Listening at: http://127.0.0.1:8000 (10914)
+[2018-11-18 05:44:10 +0000] [10914] [INFO] Using worker: sync
+[2018-11-18 05:44:10 +0000] [10918] [INFO] Booting worker with pid: 10918
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-18 05:44:11.484097: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:44:11.485361: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:44:14,812] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
+    zf.write(individualFile[1], basename(individualFile[1]))
+IndexError: string index out of range
+[2018-11-18 05:47:04 +0000] [10914] [INFO] Handling signal: term
+[2018-11-18 05:47:04 +0000] [10918] [INFO] Worker exiting (pid: 10918)
+None
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
+filesFromDB Failed
+[2018-11-18 05:47:05 +0000] [10914] [INFO] Shutting down: Master
+[2018-11-18 05:47:06 +0000] [11023] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:47:06 +0000] [11023] [INFO] Listening at: http://127.0.0.1:8000 (11023)
+[2018-11-18 05:47:06 +0000] [11023] [INFO] Using worker: sync
+[2018-11-18 05:47:06 +0000] [11029] [INFO] Booting worker with pid: 11029
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-18 05:47:07.492841: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:47:07.494175: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 05:48:37,417] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 46, in upload_file
+    images = filesFromDB(minRow, maxRow)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 144, in filesFromDB
+    (minRow, maxRow)
+TypeError: %d format: a number is required, not unicode
+[2018-11-18 05:50:54 +0000] [11023] [INFO] Handling signal: term
+[2018-11-18 05:50:54 +0000] [11029] [INFO] Worker exiting (pid: 11029)
+None
+[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
+1
+[2018-11-18 05:50:54 +0000] [11023] [INFO] Shutting down: Master
+[2018-11-18 05:50:55 +0000] [11141] [INFO] Starting gunicorn 19.9.0
+[2018-11-18 05:50:55 +0000] [11141] [INFO] Listening at: http://127.0.0.1:8000 (11141)
+[2018-11-18 05:50:55 +0000] [11141] [INFO] Using worker: sync
+[2018-11-18 05:50:55 +0000] [11145] [INFO] Booting worker with pid: 11145
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-18 05:50:56.796346: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-18 05:50:56.797575: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.

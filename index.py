@@ -38,8 +38,16 @@ def upload_file():
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
-        images = filesFromDB()
-	if images == "No results":
+	minRow = request.args.get('minRow')
+	maxRow = request.args.get('maxRow')
+	print(minRow)
+	images = None
+	if minRow is not None and maxRow is not None:
+        	images = filesFromDB(minRow, maxRow)
+	else:
+		images = filesFromDB()
+	print(images)
+	if images == "No results" or images is None:
 		return "No results"
         memory_file = BytesIO()
         with zipfile.ZipFile(memory_file, 'w') as zf:
@@ -129,9 +137,11 @@ def fileToDB(file):
                 return "High Yes"
 
 # Gets files from DB
-def filesFromDB():
+def filesFromDB(minRow='0', maxRow='50000'):
     # Also plain old SQL query
-    sql = "SELECT * FROM IMAGES"
+    sql = "SELECT * FROM IMAGES \
+	 LIMIT %s,%s" % \
+	(minRow, maxRow)
 
     try:
         cursor.execute(sql)
