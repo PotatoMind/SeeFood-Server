@@ -11,6 +11,7 @@ import time
 from os.path import basename
 import os
 from find_food import findFood
+import numpy as np
 
 # Initialize the Flask application
 application = Flask(__name__)
@@ -32,16 +33,14 @@ def upload_file():
         # This gets the file from the POST request
         f = request.files['the_file']
         # Sends file to DB and saves in images/ folder
-        results = fileToDB(f)        
-        db.close()
-	    return results
+        results = fileToDB(f)
+	return results
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
         images = filesFromDB()
-        db.close()
-	    if images == "No results":
-		    return "No results"
+	if images == "No results":
+		return "No results"
         memory_file = BytesIO()
         with zipfile.ZipFile(memory_file, 'w') as zf:
             for individualFile in images:
@@ -54,8 +53,8 @@ def upload_file():
 def fileToDB(file):
     # Get the name from the image that was submitted through POST request
     # Also, some other variables for later
-    name = secure_filename(file.filename)
-    path = 'files/' + name
+    name, ext = os.path.splitext(secure_filename(file.filename))
+    path = 'files/' + name + ext
     scores = None
     conf_score = None
 
@@ -63,14 +62,13 @@ def fileToDB(file):
     if not os.path.exists(path):
         # Create a string path to the location where we want the image
         # A unique ID is appended due to duplicate filenames. This needs revised
-        path = 'files/' + generate_id()
+        path = 'files/' + generate_id() + ext
         while os.path.exists(path):
             path = 'files/' + generate_id()
         try:
             file.save(path)
         except:
             return "Couldn't save for some dang reason"
-        
         scores = findFood(path)
         conf_score = abs(scores[0,0] - scores[0,1])
 
@@ -91,7 +89,7 @@ def fileToDB(file):
 
         # SQL query
         sql = "INSERT INTO IMAGES(NAME, PATH, SCORE_1, SCORE_2) \
-            VALUES ('%s', '%s')" % \
+            VALUES ('%s', '%s', '%f', '%f')" % \
             (name, path, scores[0,0], scores[0,1])
 
         try:
@@ -100,7 +98,6 @@ def fileToDB(file):
             # This commits the changes to the DB
             db.commit()
             # This saves the image to the path location
-            return path
         except (MySQLdb.Error, MySQLdb.Warning) as e:
             # Oh no we fucked up, gotta roll back to a previous DB version
             db.rollback()
@@ -147,7 +144,7 @@ def filesFromDB():
 
         for image in results:
             #name = image[0]
-            images.append([image[0], image[1], Image[2], Image[3]])
+            images.append([image[0], image[1], image[2], image[3]])
         return images
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
