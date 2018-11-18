@@ -35,27 +35,5 @@ def findFood(image_path):
     #print scores[0,:]
     #print scores[0,0]
     #print scores[0,1]
-    conf_score = abs(scores[0,0] - scores[0,1])
-    # if np.argmax = 0; then the first class_score was higher, e.g., the model sees food.
-    # if np.argmax = 1; then the second class_score was higher, e.g., the model does not see food.
-    if np.argmax(scores) == 1:
-	if conf_score < 1:
-		return "Very Low No"
-	elif conf_score < 2:
-		return "Low No"
-	elif conf_score < 3:
-		return "Moderate No"
-	else:
-		return "High No"
 
-    else:
-        if conf_score < 1:
-		return "Very Low Yes"
-	elif conf_score < 2:
-		return "Low Yes"
-	elif conf_score < 3:
-		return "Moderate Yes"
-	else:
-		return "High Yes"
-
-    return "You dun messed up A A Ron"
+    return scores

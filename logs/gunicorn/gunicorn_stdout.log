@@ -1217,3 +1217,170 @@ IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
   from ._conv import register_converters as _register_converters
 2018-11-13 23:49:33.349819: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
 2018-11-13 23:49:33.350641: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-14 00:57:17 +0000] [28451] [INFO] Handling signal: term
+[2018-11-14 00:57:17 +0000] [28455] [INFO] Worker exiting (pid: 28455)
+looking for food in files/3TAVWBR_loaded_fries.png
+[ 2.6241589 -0.5593945]
+Oh yes... I see food! :D
+looking for food in files/7D9NMLF_loaded_fries.png
+[ 2.6241589 -0.5593945]
+Oh yes... I see food! :D
+looking for food in files/EMFKQ4M_lobster.jpg
+[ 3.7548828 -1.6814774]
+Oh yes... I see food! :D
+looking for food in files/EX80WWH_poodle.png
+[0.21178657 1.8502414 ]
+No food here... :( 
+looking for food in files/ASMVI05_cookies.png
+[1.9905628  0.07598221]
+Oh yes... I see food! :D
+looking for food in files/G596QIU_high_school_lunch.jpg
+[ 2.464446   -0.39532638]
+Oh yes... I see food! :D
+looking for food in files/S8CPQNH_high_school_lunch_room.jpg
+[1.3773241  0.68766713]
+Oh yes... I see food! :D
+[2018-11-14 00:57:17 +0000] [28451] [INFO] Shutting down: Master
+[2018-11-14 00:57:19 +0000] [28682] [INFO] Starting gunicorn 19.9.0
+[2018-11-14 00:57:19 +0000] [28682] [INFO] Listening at: http://127.0.0.1:8000 (28682)
+[2018-11-14 00:57:19 +0000] [28682] [INFO] Using worker: sync
+[2018-11-14 00:57:19 +0000] [28686] [INFO] Booting worker with pid: 28686
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-14 00:57:21.711042: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-14 00:57:21.711857: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-15 23:04:03,377] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = findFood(path)
+  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
+    image = Image.open(image_path).convert('RGB')
+  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
+[2018-11-15 23:18:54,122] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    zf.write(individualFile[1], basename(individualFile[1]))
+IndexError: string index out of range
+[2018-11-15 23:26:13,023] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    zf.write(individualFile[1], basename(individualFile[1]))
+IndexError: string index out of range
+[2018-11-15 23:29:53,060] ERROR in app: Exception on /upload [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    with zipfile.ZipFile(memory_file, 'w') as zf:
+IndexError: string index out of range
+[2018-11-15 23:30:03 +0000] [28682] [INFO] Handling signal: term
+[2018-11-15 23:30:03 +0000] [28686] [INFO] Worker exiting (pid: 28686)
+looking for food in files/7SRVJP2_high_school_lunch_room.jpg
+(2006, 'MySQL server has gone away')
+(2006, 'MySQL server has gone away')
+(2006, 'MySQL server has gone away')
+(2006, 'MySQL server has gone away')
+[2018-11-15 23:30:03 +0000] [28682] [INFO] Shutting down: Master
+[2018-11-15 23:30:05 +0000] [32206] [INFO] Starting gunicorn 19.9.0
+[2018-11-15 23:30:05 +0000] [32206] [INFO] Listening at: http://127.0.0.1:8000 (32206)
+[2018-11-15 23:30:05 +0000] [32206] [INFO] Using worker: sync
+[2018-11-15 23:30:05 +0000] [32210] [INFO] Booting worker with pid: 32210
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-15 23:30:08.096599: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-15 23:30:08.102773: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-16 17:17:34,620] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = findFood(path)
+  File "/home/ubuntu/SeeFood-Server/find_food.py", line 28, in findFood
+    image = Image.open(image_path).convert('RGB')
+  File "/opt/anaconda2/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: 'fileToDB Failed'
+[2018-11-18 04:31:55 +0000] [32206] [INFO] Handling signal: term
+[2018-11-18 04:31:55 +0000] [32210] [INFO] Worker exiting (pid: 32210)
+looking for food in files/GE4MID2_loaded_fries.png
+looking for food in files/CT86K1P_loaded_fries.png
+looking for food in files/TNXCNMY_loaded_fries.png
+looking for food in files/68TROGK_IMG_20181110_174027.jpg
+looking for food in files/87PA3ZS_IMG_20181110_174041.jpg
+looking for food in files/XDW1NWM_IMG_20181110_174027.jpg
+looking for food in files/9U983U6_IMG_20181110_174027.jpg
+looking for food in files/H2G81XO_IMG_20181110_174027.jpg
+looking for food in files/EXFY1XF_IMG_20181110_174048.jpg
+looking for food in files/U2P36PN_IMG_20181110_174027.jpg
+looking for food in files/1KAOJ5K_IMG_20181110_174041.jpg
+looking for food in files/OP3ZOJX_IMG_20181110_174041.jpg
+looking for food in files/GSBS5HT_IMG_20181110_174027.jpg
+looking for food in files/JGHQ0QR_IMG_20181110_174048.jpg
+looking for food in files/6CRI7CO_IMG_20181110_174035.jpg
+looking for food in files/YOLQDM5_IMG_20181110_174035.jpg
+looking for food in files/H34L5XB_IMG_20181110_174048.jpg
+looking for food in files/7WOULKX_IMG_20181110_174041.jpg
+looking for food in files/VTT0XTX_JPEG_20181115_203344_1493956210753652537.jpg
+looking for food in files/8JK9LW3_IMG_20181110_174048.jpg
+looking for food in files/0ELGDZF_IMG_20181110_174035.jpg
+looking for food in files/TGUQ482_IMG_20181110_174048.jpg
+looking for food in files/J8UNPQC_JPEG_20181115_210527_4964493301690007310.jpg
+looking for food in files/QXP1UB3_IMG_20181112_200416.jpg
+looking for food in files/0KDEEQQ_IMG_20181106_211611.jpg
+looking for food in files/18SHY88_IMG_20181017_171031.jpg
+looking for food in files/81A085Q_JPEG_20181115_211526_9066295213723975340.jpg
+looking for food in files/0Y1THJ9_IMG_20181031_205717.jpg
+looking for food in files/U60SPDF_JPEG_20181115_212154_6749204932022673920.jpg
+looking for food in files/9XOS4U5_IMG_20181031_205717.jpg
+looking for food in files/S7CQLYW_JPEG_20181115_214319_4775849922163972539.jpg
+looking for food in files/DEIH6DX_JPEG_20181115_214435_1036811307323246265.jpg
+(2006, 'MySQL server has gone away')
+[2018-11-18 04:31:56 +0000] [32206] [INFO] Shutting down: Master

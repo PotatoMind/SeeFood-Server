@@ -6,3 +6,4 @@
 2018/11/09 05:32:01 [error] 10904#10904: *3 client intended to send too large body: 2644771 bytes, client: 65.189.62.206, server: 3.16.73.99, request: "POST /upload HTTP/1.1", host: "3.16.73.99"
 2018/11/09 05:52:56 [error] 11028#11028: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 65.189.62.206, server: 3.16.73.99, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "3.16.73.99"
 2018/11/09 05:53:02 [error] 11028#11028: *14 connect() failed (111: Connection refused) while connecting to upstream, client: 65.189.62.206, server: 3.16.73.99, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "3.16.73.99"
+2018/11/15 22:29:11 [error] 11028#11028: *974 readv() failed (104: Connection reset by peer) while reading upstream, client: 65.186.35.124, server: 3.16.73.99, request: "POST /upload HTTP/1.1", upstream: "http://127.0.0.1:8000/upload", host: "3.16.73.99"

@@ -32,13 +32,16 @@ def upload_file():
         # This gets the file from the POST request
         f = request.files['the_file']
         # Sends file to DB and saves in images/ folder
-        path = fileToDB(f)
-        results = findFood(path)
-	return results
+        results = fileToDB(f)        
+        db.close()
+	    return results
     if request.method == 'GET':
         ### Gets (currently all) paths from DB
         ### Needs to return actual images!
         images = filesFromDB()
+        db.close()
+	    if images == "No results":
+		    return "No results"
         memory_file = BytesIO()
         with zipfile.ZipFile(memory_file, 'w') as zf:
             for individualFile in images:
@@ -46,50 +49,87 @@ def upload_file():
         zf.close()
         memory_file.seek(0)
         return send_file(memory_file, attachment_filename='seefood_images.zip', as_attachment=True)
-    db.close()
 
 # Puts files in DB
 def fileToDB(file):
     # Get the name from the image that was submitted through POST request
+    # Also, some other variables for later
     name = secure_filename(file.filename)
-
-    # Check to see if the file is already in the database
-    sql = "SELECT PATH FROM IMAGES \
-        WHERE NAME = '%s'" % \
-        (name)
-
-    try:
-        cursor.execute(sql)
-        results = cursor.fetchone()
-        #print(type(results))
-        if results is not None:
-            return results[0]
-    except (MySQLdb.Error, MySQLdb.Warning) as e:
-        print(e)
-        return "fileToDB Failed"
-
-    # Create a string path to the location where we want the image
-    # A unique ID is appended due to duplicate filenames. This needs revised
-    name = generate_id() + "_" + name
     path = 'files/' + name
-    # SQL query
-    sql = "INSERT INTO IMAGES(NAME, PATH) \
-        VALUES ('%s', '%s')" % \
-        (name, path)
+    scores = None
+    conf_score = None
 
-    try:
-        # This executes the SQL query
-        cursor.execute(sql)
-        # This commits the changes to the DB
-        db.commit()
-        # This saves the image to the path location
-        file.save(path)
-        return path
-    except (MySQLdb.Error, MySQLdb.Warning) as e:
-        # Oh no we fucked up, gotta roll back to a previous DB version
-        db.rollback()
-        print(e)
-        return "IT BROKE YO"
+    # If the file doesn't already exist in the folder (meaning it's from the image gallery)
+    if not os.path.exists(path):
+        # Create a string path to the location where we want the image
+        # A unique ID is appended due to duplicate filenames. This needs revised
+        path = 'files/' + generate_id()
+        while os.path.exists(path):
+            path = 'files/' + generate_id()
+        try:
+            file.save(path)
+        except:
+            return "Couldn't save for some dang reason"
+        
+        scores = findFood(path)
+        conf_score = abs(scores[0,0] - scores[0,1])
+
+        # Check to see if the file is already in the database (not really needed now that the file is checked in the directory)
+        # sql = "SELECT PATH FROM IMAGES \
+        #     WHERE NAME = '%s'" % \
+        #     (name)
+
+        # try:
+        #     cursor.execute(sql)
+        #     results = cursor.fetchone()
+        #     #print(type(results))
+        #     if results is not None:
+        #         return results[0]
+        # except (MySQLdb.Error, MySQLdb.Warning) as e:
+        #     print(e)
+        #     return "fileToDB Failed"
+
+        # SQL query
+        sql = "INSERT INTO IMAGES(NAME, PATH, SCORE_1, SCORE_2) \
+            VALUES ('%s', '%s')" % \
+            (name, path, scores[0,0], scores[0,1])
+
+        try:
+            # This executes the SQL query
+            cursor.execute(sql)
+            # This commits the changes to the DB
+            db.commit()
+            # This saves the image to the path location
+            return path
+        except (MySQLdb.Error, MySQLdb.Warning) as e:
+            # Oh no we fucked up, gotta roll back to a previous DB version
+            db.rollback()
+            print(e)
+            return "IT BROKE YO"
+        else:
+            scores = findFood(path)
+            conf_score = abs(scores[0,0] - scores[0,1])
+
+        # if np.argmax = 0; then the first class_score was higher, e.g., the model sees food.
+        # if np.argmax = 1; then the second class_score was higher, e.g., the model does not see food.
+        if np.argmax(scores) == 1:
+            if conf_score < 1:
+                return "Very Low No"
+            elif conf_score < 2:
+                return "Low No"
+            elif conf_score < 3:
+                return "Moderate No"
+            else:
+                return "High No"
+        else:
+            if conf_score < 1:
+                return "Very Low Yes"
+            elif conf_score < 2:
+                return "Low Yes"
+            elif conf_score < 3:
+                return "Moderate Yes"
+            else:
+                return "High Yes"
 
 # Gets files from DB
 def filesFromDB():
@@ -100,12 +140,14 @@ def filesFromDB():
         cursor.execute(sql)
         # If we are expecting results, we have to felt them after we query!
         results = cursor.fetchall()
-
+	if results is None:
+		return "No results"
         # Loops through every image from query and creates a list of paths
         images = []
+
         for image in results:
             #name = image[0]
-            images.append([image[0], image[1]])
+            images.append([image[0], image[1], Image[2], Image[3]])
         return images
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
