@@ -201,3 +201,185 @@ None
   from ._conv import register_converters as _register_converters
 2018-11-18 05:50:56.796346: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
 2018-11-18 05:50:56.797575: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-18 23:51:40,562] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-18 23:53:52,624] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-19 00:08:59,716] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-19 00:09:30,253] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-20 17:02:24,115] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-20 17:02:54,605] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-20 17:04:33,672] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    db.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-20 17:10:18,712] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+    results = fileToDB(f)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
+    # Oh no we fucked up, gotta roll back to a previous DB version
+OperationalError: (2006, 'MySQL server has gone away')
+[2018-11-20 17:10:31 +0000] [11141] [INFO] Handling signal: term
+[2018-11-20 17:10:31 +0000] [11145] [INFO] Worker exiting (pid: 11145)
+1
+[['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
+0
+[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394]]
+0
+[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
+1
+[['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
+0
+[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394]]
+None
+[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
+looking for food in files/VRHCN25.jpg
+looking for food in files/4T3HQCE.jpg
+looking for food in files/STVGX8L.jpg
+looking for food in files/NWI4M7O.jpg
+looking for food in files/4NPCA1P.png
+looking for food in files/9VDTDTW.png
+looking for food in files/TZ2537A.png
+looking for food in files/VZPAM9Z.png
+[2018-11-20 17:10:31 +0000] [11141] [INFO] Shutting down: Master
+[2018-11-20 17:10:33 +0000] [23816] [INFO] Starting gunicorn 19.9.0
+[2018-11-20 17:10:33 +0000] [23816] [INFO] Listening at: http://127.0.0.1:8000 (23816)
+[2018-11-20 17:10:33 +0000] [23816] [INFO] Using worker: sync
+[2018-11-20 17:10:33 +0000] [23820] [INFO] Booting worker with pid: 23820
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-20 17:10:36.417849: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-20 17:10:36.422155: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-11-20 17:13:39 +0000] [23816] [INFO] Handling signal: term
+[2018-11-20 17:13:39 +0000] [23820] [INFO] Worker exiting (pid: 23820)
+looking for food in files/YPSZCYT.png
+looking for food in files/YPSZCYT.png
+looking for food in files/UAC3D1S.jpg
+looking for food in files/UAC3D1S.jpg
+[2018-11-20 17:13:40 +0000] [23816] [INFO] Shutting down: Master
+[2018-11-20 17:13:41 +0000] [23930] [INFO] Starting gunicorn 19.9.0
+[2018-11-20 17:13:41 +0000] [23930] [INFO] Listening at: http://127.0.0.1:8000 (23930)
+[2018-11-20 17:13:41 +0000] [23930] [INFO] Using worker: sync
+[2018-11-20 17:13:41 +0000] [23938] [INFO] Booting worker with pid: 23938
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-11-20 17:13:43.316618: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-11-20 17:13:43.317481: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.

@@ -70,7 +70,8 @@ def fileToDB(file):
     if not os.path.exists(path):
         # Create a string path to the location where we want the image
         # A unique ID is appended due to duplicate filenames. This needs revised
-        path = 'files/' + generate_id() + ext
+        name = generate_id()
+        path = 'files/' + name + ext
         while os.path.exists(path):
             path = 'files/' + generate_id()
         try:
