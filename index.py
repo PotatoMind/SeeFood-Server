@@ -52,7 +52,24 @@ def upload_file():
         memory_file = BytesIO()
         with zipfile.ZipFile(memory_file, 'w') as zf:
             for individualFile in images:
-                zf.write(individualFile[1], basename(individualFile[1]))
+                scores = [individualFile[2], individualFile[3]]
+                conf_score = abs(scores[0] - scores[1])
+                score = "None"
+                if np.argmax(scores) == 1:
+                    if conf_score < 1:
+                        score = "low_no"
+                    elif conf_score < 2:
+                        score = "moderate_no"
+                    else:
+                        score = "high_no"
+                else:
+                    if conf_score < 1:
+                        score = "low_yes"
+                    elif conf_score < 2:
+                        score = "moderate_yes"
+                    else:
+                        score = "high_yes"
+                zf.write(individualFile[1], "" + score + "_" + basename(individualFile[1]))
         zf.close()
         memory_file.seek(0)
         return send_file(memory_file, attachment_filename='seefood_images.zip', as_attachment=True)
@@ -120,19 +137,15 @@ def fileToDB(file):
         # if np.argmax = 1; then the second class_score was higher, e.g., the model does not see food.
         if np.argmax(scores) == 1:
             if conf_score < 1:
-                return "Very Low No"
-            elif conf_score < 2:
                 return "Low No"
-            elif conf_score < 3:
+            elif conf_score < 2:
                 return "Moderate No"
             else:
                 return "High No"
         else:
             if conf_score < 1:
-                return "Very Low Yes"
-            elif conf_score < 2:
                 return "Low Yes"
-            elif conf_score < 3:
+            elif conf_score < 2:
                 return "Moderate Yes"
             else:
                 return "High Yes"
