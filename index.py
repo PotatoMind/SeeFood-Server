@@ -8,10 +8,12 @@ import MySQLdb
 import zipfile
 from io import BytesIO
 import time
+import datetime
 from os.path import basename
 import os
 from find_food import findFood
 import numpy as np
+import json
 
 # Initialize the Flask application
 application = Flask(__name__)
@@ -69,6 +71,13 @@ def upload_file():
         zf.close()
         memory_file.seek(0)
         return send_file(memory_file, attachment_filename='seefood_images.zip', as_attachment=True)
+
+@application.route('/stats', methods=['GET'])
+def stats():
+	if request.method == 'GET':
+		return str(statsFromDB())
+	else:
+		return "I'm watching you homie"
 
 # Puts files in DB
 def fileToDB(file):
@@ -174,17 +183,49 @@ def filesFromDB(minRow='0', maxRow='50000'):
         results = cursor.fetchall()
 	if results is None:
         	db.close()
-        	cursor.close()
+       		cursor.close()
 		return "No results"
         # Loops through every image from query and creates a list of paths
         images = []
 
         for image in results:
             #name = image[0]
-        	images.append([image[0], image[1], image[2], image[3]])
+            images.append([image[0], image[1], image[2], image[3]])
         db.close()
         cursor.close()
         return images
+    except (MySQLdb.Error, MySQLdb.Warning) as e:
+        print(e)
+        db.close()
+        cursor.close()
+        return "filesFromDB Failed"
+
+def statsFromDB():
+    # Initialize the MySQL database connection
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+    # Initialize a cursor to perform SQL queries
+    cursor = db.cursor()
+
+     # Also plain old SQL query
+    sql = "SELECT * FROM IMAGES \
+        WHERE DATE_FORMAT(CREATED_AT, '%%Y-%%m-%%d') = DATE_FORMAT(NOW(), '%%Y-%%m-%%d')"
+
+    sql2 = "SELECT * FROM IMAGES"
+
+    try:
+        cursor.execute(sql)
+        # If we are expecting results, we have to felt them after we query!
+        results = cursor.fetchall()
+	cursor.execute(sql2)
+	results2 = cursor.fetchall()
+	if results is None or results2 is None:
+        	db.close()
+        	cursor.close()
+		return "No results"
+        # Loops through every image from query and creates a list of paths
+        db.close()
+        cursor.close()
+        return json.dumps({"numToday": len(results),"numAllTime": len(results2)})
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
         db.close()
