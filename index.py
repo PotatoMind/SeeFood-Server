@@ -15,10 +15,6 @@ import numpy as np
 
 # Initialize the Flask application
 application = Flask(__name__)
-# Initialize the MySQL database connection
-db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
-# Initialize a cursor to perform SQL queries
-cursor = db.cursor()
 
 # Main page of the website
 @application.route("/")
@@ -47,8 +43,8 @@ def upload_file():
 	else:
 		images = filesFromDB()
 	print(images)
-	if images == "No results" or images is None:
-		return "No results"
+	if images == "No results" or images == "filesFromDB Failed" or images is None:
+		return images
         memory_file = BytesIO()
         with zipfile.ZipFile(memory_file, 'w') as zf:
             for individualFile in images:
@@ -76,6 +72,10 @@ def upload_file():
 
 # Puts files in DB
 def fileToDB(file):
+    # Initialize the MySQL database connection
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+    # Initialize a cursor to perform SQL queries
+    cursor = db.cursor()
     # Get the name from the image that was submitted through POST request
     # Also, some other variables for later
     name, ext = os.path.splitext(secure_filename(file.filename))
@@ -94,6 +94,8 @@ def fileToDB(file):
         try:
             file.save(path)
         except:
+            db.close()
+            cursor.close()
             return "Couldn't save for some dang reason"
         scores = findFood(path)
         conf_score = abs(scores[0,0] - scores[0,1])
@@ -127,12 +129,16 @@ def fileToDB(file):
         except (MySQLdb.Error, MySQLdb.Warning) as e:
             # Oh no we fucked up, gotta roll back to a previous DB version
             db.rollback()
+            db.close()
+            cursor.close()
             print(e)
             return "IT BROKE YO"
         else:
             scores = findFood(path)
             conf_score = abs(scores[0,0] - scores[0,1])
 
+        db.close()
+        cursor.close()
         # if np.argmax = 0; then the first class_score was higher, e.g., the model sees food.
         # if np.argmax = 1; then the second class_score was higher, e.g., the model does not see food.
         if np.argmax(scores) == 1:
@@ -152,6 +158,11 @@ def fileToDB(file):
 
 # Gets files from DB
 def filesFromDB(minRow='0', maxRow='50000'):
+    # Initialize the MySQL database connection
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+    # Initialize a cursor to perform SQL queries
+    cursor = db.cursor()
+
     # Also plain old SQL query
     sql = "SELECT * FROM IMAGES \
 	 LIMIT %s,%s" % \
@@ -162,16 +173,22 @@ def filesFromDB(minRow='0', maxRow='50000'):
         # If we are expecting results, we have to felt them after we query!
         results = cursor.fetchall()
 	if results is None:
+        	db.close()
+        	cursor.close()
 		return "No results"
         # Loops through every image from query and creates a list of paths
         images = []
 
         for image in results:
             #name = image[0]
-            images.append([image[0], image[1], image[2], image[3]])
+        	images.append([image[0], image[1], image[2], image[3]])
+        db.close()
+        cursor.close()
         return images
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
+        db.close()
+        cursor.close()
         return "filesFromDB Failed"
 
 # A function to generate 7 random characters
