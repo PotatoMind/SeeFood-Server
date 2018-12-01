@@ -38,40 +38,12 @@ def upload_file():
         ### Needs to return actual images!
 	minRow = request.args.get('minRow')
 	maxRow = request.args.get('maxRow')
-	print(minRow)
 	images = None
 	if minRow is not None and maxRow is not None:
-        	images = filesFromDB(minRow, maxRow)
+        	return filesFromDB(minRow, maxRow)
 	else:
-		images = filesFromDB()
-	print(images)
-	if images == "No results" or images == "filesFromDB Failed" or images is None:
-		return images
-        memory_file = BytesIO()
-        with zipfile.ZipFile(memory_file, 'w') as zf:
-            for individualFile in images:
-                scores = [individualFile[2], individualFile[3]]
-                conf_score = abs(scores[0] - scores[1])
-                score = "None"
-                if np.argmax(scores) == 1:
-                    if conf_score < 1:
-                        score = "low_no"
-                    elif conf_score < 2:
-                        score = "moderate_no"
-                    else:
-                        score = "high_no"
-                else:
-                    if conf_score < 1:
-                        score = "low_yes"
-                    elif conf_score < 2:
-                        score = "moderate_yes"
-                    else:
-                        score = "high_yes"
-                zf.write(individualFile[1], "" + score + "_" + basename(individualFile[1]))
-        zf.close()
-        memory_file.seek(0)
-        return send_file(memory_file, attachment_filename='seefood_images.zip', as_attachment=True)
-
+		return filesFromDB()	
+        
 @application.route('/stats', methods=['GET'])
 def stats():
 	if request.method == 'GET':
@@ -88,6 +60,8 @@ def fileToDB(file):
     # Get the name from the image that was submitted through POST request
     # Also, some other variables for later
     name, ext = os.path.splitext(secure_filename(file.filename))
+    if ext != ".png" and ext != ".jpg" and ext != ".jpeg":
+	return "Not an image!"
     path = 'files/' + name + ext
     scores = None
     conf_score = None
@@ -109,25 +83,10 @@ def fileToDB(file):
         scores = findFood(path)
         conf_score = abs(scores[0,0] - scores[0,1])
 
-        # Check to see if the file is already in the database (not really needed now that the file is checked in the directory)
-        # sql = "SELECT PATH FROM IMAGES \
-        #     WHERE NAME = '%s'" % \
-        #     (name)
-
-        # try:
-        #     cursor.execute(sql)
-        #     results = cursor.fetchone()
-        #     #print(type(results))
-        #     if results is not None:
-        #         return results[0]
-        # except (MySQLdb.Error, MySQLdb.Warning) as e:
-        #     print(e)
-        #     return "fileToDB Failed"
-
         # SQL query
-        sql = "INSERT INTO IMAGES(NAME, PATH, SCORE_1, SCORE_2) \
+        sql = "INSERT INTO IMAGES(NAME, EXT, SCORE_1, SCORE_2) \
             VALUES ('%s', '%s', '%f', '%f')" % \
-            (name, path, scores[0,0], scores[0,1])
+            (name, ext, scores[0,0], scores[0,1])
 
         try:
             # This executes the SQL query
@@ -165,41 +124,6 @@ def fileToDB(file):
             else:
                 return "High Yes"
 
-# Gets files from DB
-def filesFromDB(minRow='0', maxRow='50000'):
-    # Initialize the MySQL database connection
-    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
-    # Initialize a cursor to perform SQL queries
-    cursor = db.cursor()
-
-    # Also plain old SQL query
-    sql = "SELECT * FROM IMAGES \
-	 LIMIT %s,%s" % \
-	(minRow, maxRow)
-
-    try:
-        cursor.execute(sql)
-        # If we are expecting results, we have to felt them after we query!
-        results = cursor.fetchall()
-	if results is None:
-        	db.close()
-       		cursor.close()
-		return "No results"
-        # Loops through every image from query and creates a list of paths
-        images = []
-
-        for image in results:
-            #name = image[0]
-            images.append([image[0], image[1], image[2], image[3]])
-        db.close()
-        cursor.close()
-        return images
-    except (MySQLdb.Error, MySQLdb.Warning) as e:
-        print(e)
-        db.close()
-        cursor.close()
-        return "filesFromDB Failed"
-
 def statsFromDB():
     # Initialize the MySQL database connection
     db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
@@ -231,6 +155,61 @@ def statsFromDB():
         db.close()
         cursor.close()
         return "filesFromDB Failed"
+
+def filesFromDB(minRow = '0', maxRow = '50000'):
+    # Initialize the MySQL database connection
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+    # Initialize a cursor to perform SQL queries
+    cursor = db.cursor()
+
+    # Also plain old SQL query
+    sql = "SELECT NAME, EXT, SCORE_1, SCORE_2 FROM IMAGES \
+	 LIMIT %s,%s" % \
+	(minRow, maxRow)
+
+    try:
+        cursor.execute(sql)
+        # If we are expecting results, we have to felt them after we query!
+        results = cursor.fetchall()
+	if len(results) == 0:
+        	db.close()
+       		cursor.close()
+		return "No results"
+        # Loops through every image from query and creates a list of paths
+        images = []
+
+        for image in results:
+            data = {}
+	    data['path'] = 'http://3.16.73.99/files/' + image[0] + image[1]
+	    scores = [image[2], image[3]]
+            conf_score = abs(scores[0] - scores[1])
+            score = "None"
+            if np.argmax(scores) == 1:
+                if conf_score < 1:
+                    score = "Low No"
+                elif conf_score < 2:
+                    score = "Moderate No"
+                else:
+                    score = "High No"
+            else:
+                if conf_score < 1:
+                    score = "Low Yes"
+                elif conf_score < 2:
+                    score = "Moderate Yes"
+                else:
+                    score = "High Yes"
+	    data['score'] = score
+            images.append(data)
+
+        db.close()
+        cursor.close()
+        return str(json.dumps(images))
+    except (MySQLdb.Error, MySQLdb.Warning) as e:
+        print(e)
+        db.close()
+        cursor.close()
+        return "filesFromDB Failed"
+
 
 # A function to generate 7 random characters
 def generate_id(size=7, chars=string.ascii_uppercase + string.digits):
