@@ -2034,3 +2034,14 @@ None
   from ._conv import register_converters as _register_converters
 2018-12-01 08:32:12.547107: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
 2018-12-01 08:32:12.548367: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-01 08:50:27 +0000] [18379] [INFO] Handling signal: term
+[2018-12-01 08:50:27 +0000] [18383] [INFO] Worker exiting (pid: 18383)
+[2018-12-01 08:50:28 +0000] [18379] [INFO] Shutting down: Master
+[2018-12-01 08:50:29 +0000] [18562] [INFO] Starting gunicorn 19.9.0
+[2018-12-01 08:50:29 +0000] [18562] [INFO] Listening at: http://127.0.0.1:8000 (18562)
+[2018-12-01 08:50:29 +0000] [18562] [INFO] Using worker: sync
+[2018-12-01 08:50:29 +0000] [18566] [INFO] Booting worker with pid: 18566
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-01 08:50:30.380351: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-01 08:50:30.381637: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.

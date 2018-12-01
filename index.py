@@ -149,7 +149,72 @@ def statsFromDB():
         # Loops through every image from query and creates a list of paths
         db.close()
         cursor.close()
-        return json.dumps({"numToday": len(results),"numAllTime": len(results2)})
+
+	lowNoTodayCount = 0
+	modNoTodayCount = 0
+	highNoTodayCount = 0
+	lowYesTodayCount = 0
+	modYesTodayCount = 0
+	highYesTodayCount = 0
+	for image in results:
+	    scores = [image[3], image[4]]
+            conf_score = abs(scores[0] - scores[1])
+            score = "None"
+            if np.argmax(scores) == 1:
+                if conf_score < 1:
+                    lowNoTodayCount += 1
+                elif conf_score < 2:
+                    modNoTodayCount += 1
+                else:
+                    highNoTodayCount += 1
+            else:
+                if conf_score < 1:
+		    lowYesTodayCount += 1
+                elif conf_score < 2:
+                    modYesTodayCount += 1
+                else:
+                    highYesTodayCount += 1
+
+	lowNoAllCount = 0
+	modNoAllCount = 0
+	highNoAllCount = 0
+	lowYesAllCount = 0
+	modYesAllCount = 0
+	highYesAllCount = 0
+	for image in results2:
+	    scores = [image[3], image[4]]
+            conf_score = abs(scores[0] - scores[1])
+            if np.argmax(scores) == 1:
+                if conf_score < 1:
+                    lowNoAllCount += 1
+                elif conf_score < 2:
+                    modNoAllCount += 1
+                else:
+                    highNoAllCount += 1
+            else:
+                if conf_score < 1:
+		    lowYesAllCount += 1
+                elif conf_score < 2:
+                    modYesAllCount += 1
+                else:
+                    highYesAllCount += 1
+
+        return json.dumps({
+		"numToday": len(results),
+		"numAllTime": len(results2), 
+		"lowNoToday": lowNoTodayCount,
+		"modNoToday": modNoTodayCount,
+	        "highNoToday": highNoTodayCount,
+	        "lowYesToday": lowYesTodayCount,
+		"modYesToday": modYesTodayCount,
+		"highYesToday": highYesTodayCount, 
+		"lowNoAll": lowNoAllCount,
+		"modNoAll": modNoAllCount,
+	        "highNoAll": highNoAllCount,
+	        "lowYesAll": lowYesAllCount,
+		"modYesAll": modYesAllCount,
+		"highYesAll": highYesAllCount
+		})
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
         db.close()
