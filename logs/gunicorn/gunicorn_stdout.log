@@ -1,48 +1,4 @@
-[2018-11-18 05:12:15 +0000] [10139] [INFO] Listening at: http://127.0.0.1:8000 (10139)
-[2018-11-18 05:12:15 +0000] [10139] [INFO] Using worker: sync
-[2018-11-18 05:12:15 +0000] [10143] [INFO] Booting worker with pid: 10143
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:12:16.557261: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:12:16.558535: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:27:43 +0000] [10139] [INFO] Handling signal: term
-[2018-11-18 05:27:43 +0000] [10143] [INFO] Worker exiting (pid: 10143)
-looking for food in files/CMTKPBF.png
-looking for food in files/CMTKPBF.png
-looking for food in files/NU91NXP.png
-looking for food in files/NU91NXP.png
-[2018-11-18 05:27:43 +0000] [10139] [INFO] Shutting down: Master
-[2018-11-18 05:27:45 +0000] [10271] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:27:45 +0000] [10271] [INFO] Listening at: http://127.0.0.1:8000 (10271)
-[2018-11-18 05:27:45 +0000] [10271] [INFO] Using worker: sync
-[2018-11-18 05:27:45 +0000] [10275] [INFO] Booting worker with pid: 10275
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:27:46.496315: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:27:46.497550: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:30:36 +0000] [10271] [INFO] Handling signal: term
-[2018-11-18 05:30:36 +0000] [10275] [INFO] Worker exiting (pid: 10275)
-[2018-11-18 05:30:37 +0000] [10271] [INFO] Shutting down: Master
-[2018-11-18 05:30:38 +0000] [10432] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:30:38 +0000] [10432] [INFO] Listening at: http://127.0.0.1:8000 (10432)
-[2018-11-18 05:30:38 +0000] [10432] [INFO] Using worker: sync
-[2018-11-18 05:30:38 +0000] [10436] [INFO] Booting worker with pid: 10436
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:30:39.727134: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:30:39.728416: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:39:05 +0000] [10432] [INFO] Handling signal: term
-[2018-11-18 05:39:05 +0000] [10436] [INFO] Worker exiting (pid: 10436)
-[2018-11-18 05:39:05 +0000] [10432] [INFO] Shutting down: Master
-[2018-11-18 05:39:06 +0000] [10586] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:39:06 +0000] [10586] [INFO] Listening at: http://127.0.0.1:8000 (10586)
-[2018-11-18 05:39:06 +0000] [10586] [INFO] Using worker: sync
-[2018-11-18 05:39:06 +0000] [10590] [INFO] Booting worker with pid: 10590
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:39:07.875440: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:39:07.876656: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:39:20,371] ERROR in app: Exception on /upload [GET]
+looking for food in files/74OL[2018-12-03 16:11:50,020] ERROR in app: Exception on /upload [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -54,12 +10,36 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43, in upload_file
-    images = filesFromDB(minRow, maxRow)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 138, in filesFromDB
-    (minRow, maxRow)
-TypeError: %d format: a number is required, not NoneType
-[2018-11-18 05:39:26,633] ERROR in app: Exception on /upload [GET]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 32, in upload_file
+    f = request.files['the_file']
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 505, in parse_parts
+    _write(ell)
+  File "/opt/anaconda2/lib/python2.7/tempfile.py", line 626, in write
+    rv = file.write(s)
+IOError: [Errno 28] No space left on device
+[2018-12-03 16:14:10,086] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -71,23 +51,16 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 43, in upload_file
-    images = filesFromDB(minRow, maxRow)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 138, in filesFromDB
-    (minRow, maxRow)
-TypeError: %d format: a number is required, not NoneType
-[2018-11-18 05:41:39 +0000] [10586] [INFO] Handling signal: term
-[2018-11-18 05:41:39 +0000] [10590] [INFO] Worker exiting (pid: 10590)
-[2018-11-18 05:41:39 +0000] [10586] [INFO] Shutting down: Master
-[2018-11-18 05:41:41 +0000] [10695] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:41:41 +0000] [10695] [INFO] Listening at: http://127.0.0.1:8000 (10695)
-[2018-11-18 05:41:41 +0000] [10695] [INFO] Using worker: sync
-[2018-11-18 05:41:41 +0000] [10699] [INFO] Booting worker with pid: 10699
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:41:42.459862: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:41:42.461072: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:41:45,758] ERROR in app: Exception on /upload [GET]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    return filesFromDB()
+  File "/home/ubuntu/SeeFood-Server/index.py", line 226, in filesFromDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:14:14,170] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -99,22 +72,16 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 53, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-18 05:42:55 +0000] [10695] [INFO] Handling signal: term
-[2018-11-18 05:42:55 +0000] [10699] [INFO] Worker exiting (pid: 10699)
-(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
-[2018-11-18 05:42:55 +0000] [10695] [INFO] Shutting down: Master
-[2018-11-18 05:42:57 +0000] [10804] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:42:57 +0000] [10804] [INFO] Listening at: http://127.0.0.1:8000 (10804)
-[2018-11-18 05:42:57 +0000] [10804] [INFO] Using worker: sync
-[2018-11-18 05:42:57 +0000] [10808] [INFO] Booting worker with pid: 10808
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:42:58.146036: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:42:58.147842: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:43:01,568] ERROR in app: Exception on /upload [GET]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    return filesFromDB()
+  File "/home/ubuntu/SeeFood-Server/index.py", line 226, in filesFromDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:14:14,418] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -126,22 +93,16 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 53, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-18 05:44:08 +0000] [10804] [INFO] Handling signal: term
-[2018-11-18 05:44:08 +0000] [10808] [INFO] Worker exiting (pid: 10808)
-(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
-[2018-11-18 05:44:09 +0000] [10804] [INFO] Shutting down: Master
-[2018-11-18 05:44:10 +0000] [10914] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:44:10 +0000] [10914] [INFO] Listening at: http://127.0.0.1:8000 (10914)
-[2018-11-18 05:44:10 +0000] [10914] [INFO] Using worker: sync
-[2018-11-18 05:44:10 +0000] [10918] [INFO] Booting worker with pid: 10918
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:44:11.484097: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:44:11.485361: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:44:14,812] ERROR in app: Exception on /upload [GET]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    return filesFromDB()
+  File "/home/ubuntu/SeeFood-Server/index.py", line 226, in filesFromDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:14:15,272] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -153,24 +114,16 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-18 05:47:04 +0000] [10914] [INFO] Handling signal: term
-[2018-11-18 05:47:04 +0000] [10918] [INFO] Worker exiting (pid: 10918)
-None
-(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','50000'' at line 1")
-filesFromDB Failed
-[2018-11-18 05:47:05 +0000] [10914] [INFO] Shutting down: Master
-[2018-11-18 05:47:06 +0000] [11023] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:47:06 +0000] [11023] [INFO] Listening at: http://127.0.0.1:8000 (11023)
-[2018-11-18 05:47:06 +0000] [11023] [INFO] Using worker: sync
-[2018-11-18 05:47:06 +0000] [11029] [INFO] Booting worker with pid: 11029
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:47:07.492841: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:47:07.494175: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 05:48:37,417] ERROR in app: Exception on /upload [GET]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    return filesFromDB()
+  File "/home/ubuntu/SeeFood-Server/index.py", line 226, in filesFromDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:14:33,715] ERROR in app: Exception on /upload [GET]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -182,26 +135,16 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 46, in upload_file
-    images = filesFromDB(minRow, maxRow)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 144, in filesFromDB
-    (minRow, maxRow)
-TypeError: %d format: a number is required, not unicode
-[2018-11-18 05:50:54 +0000] [11023] [INFO] Handling signal: term
-[2018-11-18 05:50:54 +0000] [11029] [INFO] Worker exiting (pid: 11029)
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
-1
-[2018-11-18 05:50:54 +0000] [11023] [INFO] Shutting down: Master
-[2018-11-18 05:50:55 +0000] [11141] [INFO] Starting gunicorn 19.9.0
-[2018-11-18 05:50:55 +0000] [11141] [INFO] Listening at: http://127.0.0.1:8000 (11141)
-[2018-11-18 05:50:55 +0000] [11141] [INFO] Using worker: sync
-[2018-11-18 05:50:55 +0000] [11145] [INFO] Booting worker with pid: 11145
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-18 05:50:56.796346: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-18 05:50:56.797575: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-18 23:51:40,562] ERROR in app: Exception on /upload [POST]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 45, in upload_file
+    return filesFromDB()
+  File "/home/ubuntu/SeeFood-Server/index.py", line 226, in filesFromDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:15:14,176] ERROR in app: Exception on /upload [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -213,12 +156,66 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+  File "/home/ubuntu/SeeFood-Server/index.py", line 34, in upload_file
     results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-18 23:53:52,624] ERROR in app: Exception on /upload [POST]
+  File "/home/ubuntu/SeeFood-Server/index.py", line 57, in fileToDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 16:36:03 +0000] [18562] [INFO] Handling signal: term
+[2018-12-03 16:36:03 +0000] [18566] [INFO] Worker exiting (pid: 18566)
+4AW.jpg
+looking for food in files/72FQEYL.jpg
+looking for food in files/72FQEYL.jpg
+looking for food in files/7NJMG7X.jpg
+looking for food in files/7NJMG7X.jpg
+looking for food in files/10EFHJ6.jpg
+looking for food in files/10EFHJ6.jpg
+looking for food in files/BKKDU6B.jpg
+looking for food in files/BKKDU6B.jpg
+looking for food in files/0ZQ8HQL.jpg
+looking for food in files/0ZQ8HQL.jpg
+looking for food in files/56J2JW6.jpg
+looking for food in files/56J2JW6.jpg
+looking for food in files/IYUPHGF.jpg
+looking for food in files/IYUPHGF.jpg
+looking for food in files/5SJL2IW.jpg
+looking for food in files/5SJL2IW.jpg
+looking for food in files/3TEA549.jpg
+looking for food in files/3TEA549.jpg
+looking for food in files/KQUGWM6.jpg
+looking for food in files/KQUGWM6.jpg
+looking for food in files/WGQC2HI.jpg
+looking for food in files/WGQC2HI.jpg
+looking for food in files/SJW90M4.jpg
+looking for food in files/SJW90M4.jpg
+looking for food in files/ZUPI6FM.jpg
+looking for food in files/ZUPI6FM.jpg
+looking for food in files/CZRYJKY.jpg
+looking for food in files/CZRYJKY.jpg
+looking for food in files/XMJ7KDS.jpg
+looking for food in files/XMJ7KDS.jpg
+looking for food in files/51RL836.jpg
+looking for food in files/51RL836.jpg
+looking for food in files/551WA6Y.jpg
+looking for food in files/551WA6Y.jpg
+looking for food in files/DZZZ1H4.jpg
+looking for food in files/DZZZ1H4.jpg
+looking for food in files/7Z2J4Y7.jpg
+looking for food in files/7Z2J4Y7.jpg
+[2018-12-03 16:36:04 +0000] [18562] [INFO] Shutting down: Master
+[2018-12-03 16:36:06 +0000] [2649] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 16:36:06 +0000] [2649] [INFO] Listening at: http://127.0.0.1:8000 (2649)
+[2018-12-03 16:36:06 +0000] [2649] [INFO] Using worker: sync
+[2018-12-03 16:36:06 +0000] [2653] [INFO] Booting worker with pid: 2653
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 16:36:08.484646: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 16:36:08.488557: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 16:46:34,808] ERROR in app: Exception on /upload [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -230,1818 +227,300 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
+  File "/home/ubuntu/SeeFood-Server/index.py", line 32, in upload_file
+    f = request.files['the_file']
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 505, in parse_parts
+    _write(ell)
+  File "/opt/anaconda2/lib/python2.7/tempfile.py", line 626, in write
+    rv = file.write(s)
+IOError: [Errno 28] No space left on device
+[2018-12-03 16:58:54 +0000] [2649] [INFO] Handling signal: term
+[2018-12-03 16:58:54 +0000] [2653] [INFO] Worker exiting (pid: 2653)
+looking for food in files/M2M6RKB.jpg
+looking for food in files/M2M6RKB.jpg
+looking for food in files/Q2CFSG8.jpg
+looking for food in files/Q2CFSG8.jpg
+looking for food in files/6NOITEZ.jpg
+looking for food in files/6NOITEZ.jpg
+[2018-12-03 16:58:54 +0000] [2649] [INFO] Shutting down: Master
+[2018-12-03 16:58:56 +0000] [2921] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 16:58:56 +0000] [2921] [INFO] Listening at: http://127.0.0.1:8000 (2921)
+[2018-12-03 16:58:56 +0000] [2921] [INFO] Using worker: sync
+[2018-12-03 16:58:56 +0000] [2925] [INFO] Booting worker with pid: 2925
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 16:58:58.563821: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 16:58:58.565296: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 17:02:31 +0000] [2921] [INFO] Handling signal: term
+[2018-12-03 17:02:31 +0000] [2925] [INFO] Worker exiting (pid: 2925)
+[Errno 28] No space left on device
+[2018-12-03 17:02:32 +0000] [2921] [INFO] Shutting down: Master
+[2018-12-03 17:02:33 +0000] [3087] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 17:02:33 +0000] [3087] [INFO] Listening at: http://127.0.0.1:8000 (3087)
+[2018-12-03 17:02:33 +0000] [3087] [INFO] Using worker: sync
+[2018-12-03 17:02:33 +0000] [3091] [INFO] Booting worker with pid: 3091
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 17:02:35.897072: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 17:02:35.897893: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 20:18:16,957] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 32, in upload_file
+    f = request.files['the_file']
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(fi
+[2018-12-03 20:31:30,109] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 32, in upload_file
+    f = request.files['the_file']
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 505, in parse_parts
+    _write(ell)
+  File "/opt/anaconda2/lib/python2.7/tempfile.py", line 626, in write
+    rv = file.write(s)
+IOError: [Errno 28] No space left on device
+[2018-12-03 20:34:00 +0000] [3087] [INFO] Handling signal: term
+[2018-12-03 20:34:00 +0000] [3091] [INFO] Worker exiting (pid: 3091)
+looking for food in files/1PTM3YI.jpg
+looking for food in files/1PTM3YI.jpg
+looking for food in files/KEHSSJY.jpg
+looking for food in files/KEHSSJY.jpg
+[Errno 28] No space left on device
+looking for food in files/ZKSU9KZ.jpg
+looking for food in files/ZKSU9KZ.jpg
+looking for food in files/Z6CPL84.jpg
+looking for food in files/Z6CPL84.jpg
+[2018-12-03 20:34:00 +0000] [3087] [INFO] Shutting down: Master
+[2018-12-03 20:34:02 +0000] [3926] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 20:34:02 +0000] [3926] [INFO] Listening at: http://127.0.0.1:8000 (3926)
+[2018-12-03 20:34:02 +0000] [3926] [INFO] Using worker: sync
+[2018-12-03 20:34:02 +0000] [3930] [INFO] Booting worker with pid: 3930
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 20:34:05.409091: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 20:34:05.409956: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 20:34:19,556] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 32, in upload_file
+    f = request.files['the_file']
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/formparser.py", line 505, in parse_parts
+    _write(ell)
+  File "/opt/anaconda2/lib/python2.7/tempfile.py", line 626, in write
+    rv = file.write(s)
+IOError: [Errno 28] No spac[2018-12-03 20:36:18 +0000] [3926] [INFO] Handling signal: term
+[2018-12-03 20:36:18 +0000] [3930] [INFO] Worker exiting (pid: 3930)
+[2018-12-03 20:36:18 +0000] [3926] [INFO] Shutting down: Master
+[2018-12-03 20:36:19 +0000] [4197] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 20:36:19 +0000] [4197] [INFO] Listening at: http://127.0.0.1:8000 (4197)
+[2018-12-03 20:36:19 +0000] [4197] [INFO] Using worker: sync
+[2018-12-03 20:36:19 +0000] [4201] [INFO] Booting worker with pid: 4201
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 20:36:22.127177: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 20:36:22.128030: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 20:46:44 +0000] [4197] [INFO] Handling signal: term
+[2018-12-03 20:46:44 +0000] [4201] [INFO] Worker exiting (pid: 4201)
+looking for food in files/HKXDB3T.jpg
+looking for food in files/HKXDB3T.jpg
+[2018-12-03 20:46:45 +0000] [4197] [INFO] Shutting down: Master
+[2018-12-03 20:46:46 +0000] [4350] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 20:46:46 +0000] [4350] [INFO] Listening at: http://127.0.0.1:8000 (4350)
+[2018-12-03 20:46:46 +0000] [4350] [INFO] Using worker: sync
+[2018-12-03 20:46:46 +0000] [4354] [INFO] Booting worker with pid: 4354
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-12-03 20:46:48.459072: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-12-03 20:46:48.459918: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 20:49:08,601] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/SeeFood-Server/index.py", line 34, in upload_file
     results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-19 00:08:59,716] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-19 00:09:30,253] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-20 17:02:24,115] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-20 17:02:54,605] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-20 17:04:33,672] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-20 17:10:18,712] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 111, in fileToDB
-    # Oh no we fucked up, gotta roll back to a previous DB version
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-20 17:10:31 +0000] [11141] [INFO] Handling signal: term
-[2018-11-20 17:10:31 +0000] [11145] [INFO] Worker exiting (pid: 11145)
-1
-[['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
-0
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394]]
-0
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
-1
-[['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
-0
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394]]
-looking for food in files/VRHCN25.jpg
-looking for food in files/4T3HQCE.jpg
-looking for food in files/STVGX8L.jpg
-looking for food in files/NWI4M7O.jpg
-looking for food in files/4NPCA1P.png
-looking for food in files/9VDTDTW.png
-looking for food in files/TZ2537A.png
-looking for food in files/VZPAM9Z.png
-[2018-11-20 17:10:31 +0000] [11141] [INFO] Shutting down: Master
-[2018-11-20 17:10:33 +0000] [23816] [INFO] Starting gunicorn 19.9.0
-[2018-11-20 17:10:33 +0000] [23816] [INFO] Listening at: http://127.0.0.1:8000 (23816)
-[2018-11-20 17:10:33 +0000] [23816] [INFO] Using worker: sync
-[2018-11-20 17:10:33 +0000] [23820] [INFO] Booting worker with pid: 23820
+  File "/home/ubuntu/SeeFood-Server/index.py", line 57, in fileToDB
+    db = MySQLdb.connect("127.0.0.1", "root", "", "SeeFood")
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'SeeFood'")
+[2018-12-03 20:49:34 +0000] [4350] [INFO] Handling signal: term
+[2018-12-03 20:49:34 +0000] [4354] [INFO] Worker exiting (pid: 4354)
+[Errno 28] No space left on device
+global name 'Image' is not defined
+[2018-12-03 20:49:35 +0000] [4350] [INFO] Shutting down: Master
+[2018-12-03 20:58:55 +0000] [1451] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 20:58:55 +0000] [1451] [INFO] Listening at: http://127.0.0.1:8000 (1451)
+[2018-12-03 20:58:55 +0000] [1451] [INFO] Using worker: sync
+[2018-12-03 20:58:55 +0000] [1478] [INFO] Booting worker with pid: 1478
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-20 17:10:36.417849: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-20 17:10:36.422155: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-20 17:13:39 +0000] [23816] [INFO] Handling signal: term
-[2018-11-20 17:13:39 +0000] [23820] [INFO] Worker exiting (pid: 23820)
-looking for food in files/YPSZCYT.png
-looking for food in files/YPSZCYT.png
-looking for food in files/UAC3D1S.jpg
-looking for food in files/UAC3D1S.jpg
-[2018-11-20 17:13:40 +0000] [23816] [INFO] Shutting down: Master
-[2018-11-20 17:13:41 +0000] [23930] [INFO] Starting gunicorn 19.9.0
-[2018-11-20 17:13:41 +0000] [23930] [INFO] Listening at: http://127.0.0.1:8000 (23930)
-[2018-11-20 17:13:41 +0000] [23930] [INFO] Using worker: sync
-[2018-11-20 17:13:41 +0000] [23938] [INFO] Booting worker with pid: 23938
+2018-12-03 20:59:00.618559: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-12-03 20:59:00.627135: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 21:00:51 +0000] [1451] [INFO] Handling signal: term
+[2018-12-03 21:00:51 +0000] [1478] [INFO] Worker exiting (pid: 1478)
+[2018-12-03 21:00:51 +0000] [1451] [INFO] Shutting down: Master
+[2018-12-03 21:00:53 +0000] [1658] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 21:00:53 +0000] [1658] [INFO] Listening at: http://127.0.0.1:8000 (1658)
+[2018-12-03 21:00:53 +0000] [1658] [INFO] Using worker: sync
+[2018-12-03 21:00:53 +0000] [1662] [INFO] Booting worker with pid: 1662
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-20 17:13:43.316618: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-20 17:13:43.317481: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394],[2018-11-22 04:03:17,882] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-22 04:13:55,229] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-22 20:39:41,076] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-22 20:41:06,111] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 112, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-22 20:41:13,848] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    zf.write(individualFile[1], basename(individualFile[1]))
-IndexError: string index out of range
-[2018-11-26 14:41:26 +0000] [23930] [INFO] Handling signal: term
-[2018-11-26 14:41:26 +0000] [23938] [INFO] Worker exiting (pid: 23938)
- ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-[['loaded_fries', 'files/CMTKPBF.png', 2.62416, -0.559394], ['loaded_fries', 'files/NU91NXP.png', 2.62416, -0.559394], ['test', 'files/YPSZCYT.png', 0.208258, 1.85312], ['test', 'files/UAC3D1S.jpg', 1.76711, 0.293466]]
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-looking for food in files/1CP6PX5.jpg
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-[2018-11-26 14:41:26 +0000] [23930] [INFO] Shutting down: Master
-[2018-11-26 14:41:28 +0000] [14218] [INFO] Starting gunicorn 19.9.0
-[2018-11-26 14:41:28 +0000] [14218] [INFO] Listening at: http://127.0.0.1:8000 (14218)
-[2018-11-26 14:41:28 +0000] [14218] [INFO] Using worker: sync
-[2018-11-26 14:41:28 +0000] [14222] [INFO] Booting worker with pid: 14222
+2018-12-03 21:00:54.202679: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-12-03 21:00:54.203398: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 21:01:39 +0000] [1658] [INFO] Handling signal: term
+[2018-12-03 21:01:39 +0000] [1662] [INFO] Worker exiting (pid: 1662)
+[2018-12-03 21:01:39 +0000] [1658] [INFO] Shutting down: Master
+[2018-12-03 21:01:40 +0000] [1777] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 21:01:40 +0000] [1777] [INFO] Listening at: http://127.0.0.1:8000 (1777)
+[2018-12-03 21:01:40 +0000] [1777] [INFO] Using worker: sync
+[2018-12-03 21:01:40 +0000] [1781] [INFO] Booting worker with pid: 1781
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-26 14:41:30.895595: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-26 14:41:30.899332: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-26 14:42:54,294] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 56, in upload_file
-    conf_score = abs(scores[0,0] - scores[0,1])
-TypeError: list indices must be integers, not tuple
-[2018-11-26 14:47:47 +0000] [14218] [INFO] Handling signal: term
-[2018-11-26 14:47:47 +0000] [14222] [INFO] Worker exiting (pid: 14222)
-looking for food in files/6NXLFUP.jpg
-looking for food in files/6NXLFUP.jpg
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-[2018-11-26 14:47:48 +0000] [14218] [INFO] Shutting down: Master
-[2018-11-26 14:47:49 +0000] [14334] [INFO] Starting gunicorn 19.9.0
-[2018-11-26 14:47:49 +0000] [14334] [INFO] Listening at: http://127.0.0.1:8000 (14334)
-[2018-11-26 14:47:49 +0000] [14334] [INFO] Using worker: sync
-[2018-11-26 14:47:49 +0000] [14338] [INFO] Booting worker with pid: 14338
+2018-12-03 21:01:41.706782: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-12-03 21:01:41.707566: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 21:07:27 +0000] [1777] [INFO] Handling signal: term
+[2018-12-03 21:07:27 +0000] [1781] [INFO] Worker exiting (pid: 1781)
+looking for food in files/TP2ENKJ.jpg
+looking for food in files/TP2ENKJ.jpg
+[2018-12-03 21:07:27 +0000] [1777] [INFO] Shutting down: Master
+[2018-12-03 21:07:29 +0000] [1945] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 21:07:29 +0000] [1945] [INFO] Listening at: http://127.0.0.1:8000 (1945)
+[2018-12-03 21:07:29 +0000] [1945] [INFO] Using worker: sync
+[2018-12-03 21:07:29 +0000] [1949] [INFO] Booting worker with pid: 1949
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-26 14:47:51.830389: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-26 14:47:51.831185: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-26 14:47:56,635] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 56, in upload_file
-    conf_score = abs(scores[0,0] - scores[0,1])
-TypeError: list indices must be integers, not tuple
-[2018-11-26 14:50:17 +0000] [14334] [INFO] Handling signal: term
-[2018-11-26 14:50:17 +0000] [14338] [INFO] Worker exiting (pid: 14338)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-[2018-11-26 14:50:17 +0000] [14334] [INFO] Shutting down: Master
-[2018-11-26 14:50:19 +0000] [14444] [INFO] Starting gunicorn 19.9.0
-[2018-11-26 14:50:19 +0000] [14444] [INFO] Listening at: http://127.0.0.1:8000 (14444)
-[2018-11-26 14:50:19 +0000] [14444] [INFO] Using worker: sync
-[2018-11-26 14:50:19 +0000] [14453] [INFO] Booting worker with pid: 14453
+2018-12-03 21:07:29.948814: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-12-03 21:07:29.949634: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[2018-12-03 21:09:30 +0000] [1945] [INFO] Handling signal: term
+[2018-12-03 21:09:30 +0000] [1949] [INFO] Worker exiting (pid: 1949)
+looking for food in files/MI9JYT5.jpg
+looking for food in files/MI9JYT5.jpg
+[2018-12-03 21:09:30 +0000] [1945] [INFO] Shutting down: Master
+[2018-12-03 21:09:32 +0000] [2111] [INFO] Starting gunicorn 19.9.0
+[2018-12-03 21:09:32 +0000] [2111] [INFO] Listening at: http://127.0.0.1:8000 (2111)
+[2018-12-03 21:09:32 +0000] [2111] [INFO] Using worker: sync
+[2018-12-03 21:09:32 +0000] [2115] [INFO] Booting worker with pid: 2115
 /opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
   from ._conv import register_converters as _register_converters
-2018-11-26 14:50:20.825636: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-26 14:50:20.826455: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-27 21:25:23,899] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-27 21:25:29,917] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 00:20:24,811] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 00:20:40,895] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:30:22,048] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:30:47,692] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:33:05,593] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:33:33,683] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:34:10,985] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:37:13,043] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:39:15,470] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:39:22,598] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:44:13,657] ERROR in app: Exception on /upload [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 55, in upload_file
-    scores = [individualFile[2], individualFile[3]]
-IndexError: string index out of range
-[2018-11-28 04:47:56 +0000] [14444] [INFO] Handling signal: term
-[2018-11-28 04:47:56 +0000] [14453] [INFO] Worker exiting (pid: 14453)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-[2018-11-28 04:47:57 +0000] [14444] [INFO] Shutting down: Master
-[2018-11-28 04:47:58 +0000] [18643] [INFO] Starting gunicorn 19.9.0
-[2018-11-28 04:47:58 +0000] [18643] [INFO] Listening at: http://127.0.0.1:8000 (18643)
-[2018-11-28 04:47:58 +0000] [18643] [INFO] Using worker: sync
-[2018-11-28 04:47:58 +0000] [18647] [INFO] Booting worker with pid: 18647
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-28 04:48:01.011881: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-28 04:48:01.014922: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-28 05:59:59 +0000] [18643] [INFO] Handling signal: term
-[2018-11-28 05:59:59 +0000] [18647] [INFO] Worker exiting (pid: 18647)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872]]
-looking for food in files/70O9QGR.jpg
-looking for food in files/70O9QGR.jpg
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-[2018-11-28 05:59:59 +0000] [18643] [INFO] Shutting down: Master
-[2018-11-28 06:00:01 +0000] [18884] [INFO] Starting gunicorn 19.9.0
-[2018-11-28 06:00:01 +0000] [18884] [INFO] Listening at: http://127.0.0.1:8000 (18884)
-[2018-11-28 06:00:01 +0000] [18884] [INFO] Using worker: sync
-[2018-11-28 06:00:01 +0000] [18888] [INFO] Booting worker with pid: 18888
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-28 06:00:03.514989: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-28 06:00:03.515818: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-28 06:05:07 +0000] [18884] [INFO] Handling signal: term
-[2018-11-28 06:05:07 +0000] [18888] [INFO] Worker exiting (pid: 18888)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-[2018-11-28 06:05:07 +0000] [18884] [INFO] Shutting down: Master
-[2018-11-28 06:05:09 +0000] [19041] [INFO] Starting gunicorn 19.9.0
-[2018-11-28 06:05:09 +0000] [19041] [INFO] Listening at: http://127.0.0.1:8000 (19041)
-[2018-11-28 06:05:09 +0000] [19041] [INFO] Using worker: sync
-[2018-11-28 06:05:09 +0000] [19045] [INFO] Booting worker with pid: 19045
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-28 06:05:10.832815: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-28 06:05:10.833678: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-28 06:06:29 +0000] [19041] [INFO] Handling signal: term
-[2018-11-28 06:06:29 +0000] [19045] [INFO] Worker exiting (pid: 19045)
-None
-(2013, 'Lost connection to MySQL server during query')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-[2018-11-28 06:06:30 +0000] [19041] [INFO] Shutting down: Master
-[2018-11-28 06:06:31 +0000] [19233] [INFO] Starting gunicorn 19.9.0
-[2018-11-28 06:06:31 +0000] [19233] [INFO] Listening at: http://127.0.0.1:8000 (19233)
-[2018-11-28 06:06:31 +0000] [19233] [INFO] Using worker: sync
-[2018-11-28 06:06:31 +0000] [19237] [INFO] Booting worker with pid: 19237
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-28 06:06:32.769806: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-28 06:06:32.771053: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away[2018-11-29 18:58:46 +0000] [19233] [INFO] Handling signal: term
-[2018-11-29 18:58:46 +0000] [19237] [INFO] Worker exiting (pid: 19237)
-')
-filesFromDB Failed
-[2018-11-29 18:58:46 +0000] [19233] [INFO] Shutting down: Master
-[2018-11-29 18:58:48 +0000] [2397] [INFO] Starting gunicorn 19.9.0
-[2018-11-29 18:58:48 +0000] [2397] [INFO] Listening at: http://127.0.0.1:8000 (2397)
-[2018-11-29 18:58:48 +0000] [2397] [INFO] Using worker: sync
-[2018-11-29 18:58:48 +0000] [2401] [INFO] Booting worker with pid: 2401
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-29 18:58:50.864875: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-29 18:58:50.865680: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 03:18:02,229] ERROR in app: Exception on /upload [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 36, in upload_file
-    results = fileToDB(f)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 129, in fileToDB
-    db.rollback()
-OperationalError: (2006, 'MySQL server has gone away')
-[2018-11-30 18:34:06 +0000] [2397] [INFO] Handling signal: term
-[2018-11-30 18:34:06 +0000] [2401] [INFO] Worker exiting (pid: 2401)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-(2013, 'Lost connection to MySQL server during query')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-looking for food in files/04TKOY3.jpg
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-None
-(2006, 'MySQL server has gone away')
-filesFromDB Failed
-[2018-11-30 18:34:06 +0000] [2397] [INFO] Shutting down: Master
-[2018-11-30 18:34:08 +0000] [11399] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 18:34:08 +0000] [11399] [INFO] Listening at: http://127.0.0.1:8000 (11399)
-[2018-11-30 18:34:08 +0000] [11399] [INFO] Using worker: sync
-[2018-11-30 18:34:08 +0000] [11403] [INFO] Booting worker with pid: 11403
-[2018-11-30 18:34:08 +0000] [11403] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 176
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 18:34:08 +0000] [11403] [INFO] Worker exiting (pid: 11403)
-[2018-11-30 18:34:08 +0000] [11399] [INFO] Shutting down: Master
-[2018-11-30 18:34:08 +0000] [11399] [INFO] Reason: Worker failed to boot.
-[2018-11-30 18:34:09 +0000] [11404] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 18:34:09 +0000] [11404] [INFO] Listening at: http://127.0.0.1:8000 (11404)
-[2018-11-30 18:34:09 +0000] [11404] [INFO] Using worker: sync
-[2018-11-30 18:34:09 +0000] [11408] [INFO] Booting worker with pid: 11408
-[2018-11-30 18:34:09 +0000] [11408] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 176
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 18:34:09 +0000] [11408] [INFO] Worker exiting (pid: 11408)
-[2018-11-30 18:34:10 +0000] [11404] [INFO] Shutting down: Master
-[2018-11-30 18:34:10 +0000] [11404] [INFO] Reason: Worker failed to boot.
-[2018-11-30 18:34:12 +0000] [11414] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 18:34:12 +0000] [11414] [INFO] Listening at: http://127.0.0.1:8000 (11414)
-[2018-11-30 18:34:12 +0000] [11414] [INFO] Using worker: sync
-[2018-11-30 18:34:12 +0000] [11418] [INFO] Booting worker with pid: 11418
-[2018-11-30 18:34:12 +0000] [11418] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 176
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 18:34:12 +0000] [11418] [INFO] Worker exiting (pid: 11418)
-[2018-11-30 18:34:12 +0000] [11414] [INFO] Shutting down: Master
-[2018-11-30 18:34:12 +0000] [11414] [INFO] Reason: Worker failed to boot.
-[2018-11-30 18:34:15 +0000] [11419] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 18:34:15 +0000] [11419] [INFO] Listening at: http://127.0.0.1:8000 (11419)
-[2018-11-30 18:34:15 +0000] [11419] [INFO] Using worker: sync
-[2018-11-30 18:34:15 +0000] [11423] [INFO] Booting worker with pid: 11423
-[2018-11-30 18:34:15 +0000] [11423] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 176
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 18:34:15 +0000] [11423] [INFO] Worker exiting (pid: 11423)
-[2018-11-30 18:34:15 +0000] [11419] [INFO] Shutting down: Master
-[2018-11-30 18:34:15 +0000] [11419] [INFO] Reason: Worker failed to boot.
-[2018-11-30 18:36:36 +0000] [11461] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 18:36:36 +0000] [11461] [INFO] Listening at: http://127.0.0.1:8000 (11461)
-[2018-11-30 18:36:36 +0000] [11461] [INFO] Using worker: sync
-[2018-11-30 18:36:36 +0000] [11465] [INFO] Booting worker with pid: 11465
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 18:36:39.210244: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 18:36:39.214805: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:17:45 +0000] [11461] [INFO] Handling signal: term
-[2018-11-30 19:17:45 +0000] [11465] [INFO] Worker exiting (pid: 11465)
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-None
-[['6NXLFUP', 'files/6NXLFUP.jpg', -0.226043, 2.2872], ['70O9QGR', 'files/70O9QGR.jpg', 0.604104, 1.4559]]
-looking for food in files/MBQWRQA.jpg
-looking for food in files/MBQWRQA.jpg
-[2018-11-30 19:17:46 +0000] [11461] [INFO] Shutting down: Master
-[2018-11-30 19:17:47 +0000] [11799] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:17:47 +0000] [11799] [INFO] Listening at: http://127.0.0.1:8000 (11799)
-[2018-11-30 19:17:47 +0000] [11799] [INFO] Using worker: sync
-[2018-11-30 19:17:47 +0000] [11803] [INFO] Booting worker with pid: 11803
-[2018-11-30 19:17:47 +0000] [11803] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 78
-    else
-       ^
-SyntaxError: invalid syntax
-[2018-11-30 19:17:47 +0000] [11803] [INFO] Worker exiting (pid: 11803)
-[2018-11-30 19:17:47 +0000] [11799] [INFO] Shutting down: Master
-[2018-11-30 19:17:47 +0000] [11799] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:17:49 +0000] [11804] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:17:49 +0000] [11804] [INFO] Listening at: http://127.0.0.1:8000 (11804)
-[2018-11-30 19:17:49 +0000] [11804] [INFO] Using worker: sync
-[2018-11-30 19:17:49 +0000] [11808] [INFO] Booting worker with pid: 11808
-[2018-11-30 19:17:49 +0000] [11808] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 78
-    else
-       ^
-SyntaxError: invalid syntax
-[2018-11-30 19:17:49 +0000] [11808] [INFO] Worker exiting (pid: 11808)
-[2018-11-30 19:17:49 +0000] [11804] [INFO] Shutting down: Master
-[2018-11-30 19:17:49 +0000] [11804] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:17:51 +0000] [11811] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:17:51 +0000] [11811] [INFO] Listening at: http://127.0.0.1:8000 (11811)
-[2018-11-30 19:17:51 +0000] [11811] [INFO] Using worker: sync
-[2018-11-30 19:17:51 +0000] [11818] [INFO] Booting worker with pid: 11818
-[2018-11-30 19:17:51 +0000] [11818] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 78
-    else
-       ^
-SyntaxError: invalid syntax
-[2018-11-30 19:17:51 +0000] [11818] [INFO] Worker exiting (pid: 11818)
-[2018-11-30 19:17:51 +0000] [11811] [INFO] Shutting down: Master
-[2018-11-30 19:17:51 +0000] [11811] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:17:54 +0000] [11819] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:17:54 +0000] [11819] [INFO] Listening at: http://127.0.0.1:8000 (11819)
-[2018-11-30 19:17:54 +0000] [11819] [INFO] Using worker: sync
-[2018-11-30 19:17:54 +0000] [11823] [INFO] Booting worker with pid: 11823
-[2018-11-30 19:17:54 +0000] [11823] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 78
-    else
-       ^
-SyntaxError: invalid syntax
-[2018-11-30 19:17:54 +0000] [11823] [INFO] Worker exiting (pid: 11823)
-[2018-11-30 19:17:54 +0000] [11819] [INFO] Shutting down: Master
-[2018-11-30 19:17:54 +0000] [11819] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:20:35 +0000] [11856] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:20:35 +0000] [11856] [INFO] Listening at: http://127.0.0.1:8000 (11856)
-[2018-11-30 19:20:35 +0000] [11856] [INFO] Using worker: sync
-[2018-11-30 19:20:35 +0000] [11860] [INFO] Booting worker with pid: 11860
-[2018-11-30 19:20:35 +0000] [11860] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 184
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 19:20:35 +0000] [11860] [INFO] Worker exiting (pid: 11860)
-[2018-11-30 19:20:35 +0000] [11856] [INFO] Shutting down: Master
-[2018-11-30 19:20:35 +0000] [11856] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:20:36 +0000] [11866] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:20:36 +0000] [11866] [INFO] Listening at: http://127.0.0.1:8000 (11866)
-[2018-11-30 19:20:36 +0000] [11866] [INFO] Using worker: sync
-[2018-11-30 19:20:36 +0000] [11870] [INFO] Booting worker with pid: 11870
-[2018-11-30 19:20:36 +0000] [11870] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 184
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 19:20:36 +0000] [11870] [INFO] Worker exiting (pid: 11870)
-[2018-11-30 19:20:36 +0000] [11866] [INFO] Shutting down: Master
-[2018-11-30 19:20:36 +0000] [11866] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:20:38 +0000] [11871] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:20:38 +0000] [11871] [INFO] Listening at: http://127.0.0.1:8000 (11871)
-[2018-11-30 19:20:38 +0000] [11871] [INFO] Using worker: sync
-[2018-11-30 19:20:38 +0000] [11875] [INFO] Booting worker with pid: 11875
-[2018-11-30 19:20:38 +0000] [11875] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 184
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 19:20:38 +0000] [11875] [INFO] Worker exiting (pid: 11875)
-[2018-11-30 19:20:38 +0000] [11871] [INFO] Shutting down: Master
-[2018-11-30 19:20:38 +0000] [11871] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:20:41 +0000] [11877] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:20:41 +0000] [11877] [INFO] Listening at: http://127.0.0.1:8000 (11877)
-[2018-11-30 19:20:41 +0000] [11877] [INFO] Using worker: sync
-[2018-11-30 19:20:41 +0000] [11881] [INFO] Booting worker with pid: 11881
-[2018-11-30 19:20:41 +0000] [11881] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 184
-    db.close()
-     ^
-IndentationError: expected an indented block
-[2018-11-30 19:20:41 +0000] [11881] [INFO] Worker exiting (pid: 11881)
-[2018-11-30 19:20:41 +0000] [11877] [INFO] Shutting down: Master
-[2018-11-30 19:20:41 +0000] [11877] [INFO] Reason: Worker failed to boot.
-[2018-11-30 19:21:21 +0000] [11901] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:21:21 +0000] [11901] [INFO] Listening at: http://127.0.0.1:8000 (11901)
-[2018-11-30 19:21:21 +0000] [11901] [INFO] Using worker: sync
-[2018-11-30 19:21:21 +0000] [11905] [INFO] Booting worker with pid: 11905
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:21:24.215589: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:21:24.216421: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:21:37,600] ERROR in app: Exception on /stats [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 77, in stats
-    return statsFromDB()
-  File "/home/ubuntu/SeeFood-Server/index.py", line 211, in statsFromDB
-    (datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'))
-NameError: global name 'ts' is not defined
-[2018-11-30 19:22:26 +0000] [11901] [INFO] Handling signal: term
-[2018-11-30 19:22:26 +0000] [11905] [INFO] Worker exiting (pid: 11905)
-[2018-11-30 19:22:27 +0000] [11901] [INFO] Shutting down: Master
-[2018-11-30 19:22:28 +0000] [12019] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:22:28 +0000] [12019] [INFO] Listening at: http://127.0.0.1:8000 (12019)
-[2018-11-30 19:22:28 +0000] [12019] [INFO] Using worker: sync
-[2018-11-30 19:22:28 +0000] [12023] [INFO] Booting worker with pid: 12023
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:22:29.942442: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:22:29.943656: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:22:36,867] ERROR in app: Exception on /stats [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
-    response = self.make_response(rv)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1982, in make_response
-    reraise(TypeError, new_error, sys.exc_info()[2])
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1974, in make_response
-    rv = self.response_class.force_type(rv, request.environ)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 921, in force_type
-    response = BaseResponse(*_run_wsgi_app(response, environ))
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/wrappers.py", line 59, in _run_wsgi_app
-    return _run_wsgi_app(*args)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/test.py", line 923, in run_wsgi_app
-    app_rv = app(environ, start_response)
-TypeError: 'int' object is not callable
-The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a int.
-[2018-11-30 19:23:56 +0000] [12019] [INFO] Handling signal: term
-[2018-11-30 19:23:56 +0000] [12023] [INFO] Worker exiting (pid: 12023)
-[2018-11-30 19:23:56 +0000] [12019] [INFO] Shutting down: Master
-[2018-11-30 19:23:58 +0000] [12131] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:23:58 +0000] [12131] [INFO] Listening at: http://127.0.0.1:8000 (12131)
-[2018-11-30 19:23:58 +0000] [12131] [INFO] Using worker: sync
-[2018-11-30 19:23:58 +0000] [12140] [INFO] Booting worker with pid: 12140
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:23:59.650201: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:23:59.651034: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:26:30 +0000] [12131] [INFO] Handling signal: term
-[2018-11-30 19:26:30 +0000] [12140] [INFO] Worker exiting (pid: 12140)
-[2018-11-30 19:26:30 +0000] [12131] [INFO] Shutting down: Master
-[2018-11-30 19:26:31 +0000] [12243] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:26:31 +0000] [12243] [INFO] Listening at: http://127.0.0.1:8000 (12243)
-[2018-11-30 19:26:31 +0000] [12243] [INFO] Using worker: sync
-[2018-11-30 19:26:31 +0000] [12247] [INFO] Booting worker with pid: 12247
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:26:33.000543: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:26:33.001836: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:26:40,361] ERROR in app: Exception on /stats [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 77, in stats
-    return str(statsFromDB())
-  File "/home/ubuntu/SeeFood-Server/index.py", line 211, in statsFromDB
-    (datetime.datetime.now().strftime('%Y-%m-%d'))
-ValueError: unsupported format character 'Y' (0x59) at index 61
-[2018-11-30 19:27:42 +0000] [12243] [INFO] Handling signal: term
-[2018-11-30 19:27:42 +0000] [12247] [INFO] Worker exiting (pid: 12247)
-[2018-11-30 19:27:42 +0000] [12243] [INFO] Shutting down: Master
-[2018-11-30 19:27:44 +0000] [12356] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:27:44 +0000] [12356] [INFO] Listening at: http://127.0.0.1:8000 (12356)
-[2018-11-30 19:27:44 +0000] [12356] [INFO] Using worker: sync
-[2018-11-30 19:27:44 +0000] [12360] [INFO] Booting worker with pid: 12360
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:27:45.100294: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:27:45.101600: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:27:48,487] ERROR in app: Exception on /stats [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 77, in stats
-    return str(statsFromDB())
-  File "/home/ubuntu/SeeFood-Server/index.py", line 211, in statsFromDB
-    (datetime.datetime.now().strftime('%Y-%m-%d'))
-ValueError: unsupported format character 'Y' (0x59) at index 61
-[2018-11-30 19:29:34 +0000] [12356] [INFO] Handling signal: term
-[2018-11-30 19:29:34 +0000] [12360] [INFO] Worker exiting (pid: 12360)
-[2018-11-30 19:29:34 +0000] [12356] [INFO] Shutting down: Master
-[2018-11-30 19:29:35 +0000] [12490] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:29:35 +0000] [12490] [INFO] Listening at: http://127.0.0.1:8000 (12490)
-[2018-11-30 19:29:35 +0000] [12490] [INFO] Using worker: sync
-[2018-11-30 19:29:35 +0000] [12494] [INFO] Booting worker with pid: 12494
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:29:36.857858: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:29:36.859081: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:31:20 +0000] [12490] [INFO] Handling signal: term
-[2018-11-30 19:31:20 +0000] [12494] [INFO] Worker exiting (pid: 12494)
-[2018-11-30 19:31:20 +0000] [12490] [INFO] Shutting down: Master
-[2018-11-30 19:31:21 +0000] [12612] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:31:21 +0000] [12612] [INFO] Listening at: http://127.0.0.1:8000 (12612)
-[2018-11-30 19:31:21 +0000] [12612] [INFO] Using worker: sync
-[2018-11-30 19:31:21 +0000] [12616] [INFO] Booting worker with pid: 12616
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:31:22.867896: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:31:22.869131: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-11-30 19:37:39 +0000] [12612] [INFO] Handling signal: term
-[2018-11-30 19:37:39 +0000] [12616] [INFO] Worker exiting (pid: 12616)
-[2018-11-30 19:37:39 +0000] [12612] [INFO] Shutting down: Master
-[2018-11-30 19:37:40 +0000] [12741] [INFO] Starting gunicorn 19.9.0
-[2018-11-30 19:37:40 +0000] [12741] [INFO] Listening at: http://127.0.0.1:8000 (12741)
-[2018-11-30 19:37:40 +0000] [12741] [INFO] Using worker: sync
-[2018-11-30 19:37:40 +0000] [12745] [INFO] Booting worker with pid: 12745
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-11-30 19:37:42.027909: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-11-30 19:37:42.029187: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:22:23 +0000] [12741] [INFO] Handling signal: term
-[2018-12-01 07:22:23 +0000] [12745] [INFO] Worker exiting (pid: 12745)
-None
-[['MBQWRQA', 'files/MBQWRQA.jpg', 0.201951, 1.86174]]
-looking for food in files/CEHHDO5.jpg
-looking for food in files/CEHHDO5.jpg
-looking for food in files/XJ774DB.jpg
-looking for food in files/XJ774DB.jpg
-looking for food in files/NR0FMT2.jpg
-looking for food in files/NR0FMT2.jpg
-None
-[['MBQWRQA', 'files/MBQWRQA.jpg', 0.201951, 1.86174], ['CEHHDO5', 'files/CEHHDO5.jpg', 0.514178, 1.5428], ['XJ774DB', 'files/XJ774DB.jpg', 2.46232, -0.393847], ['NR0FMT2', 'files/NR0FMT2.jpg', -0.525583, 2.58906]]
-looking for food in files/5UTF2L4.png
-looking for food in files/5UTF2L4.png
-looking for food in files/00ELB0I.jpg
-looking for food in files/00ELB0I.jpg
-None
-[['MBQWRQA', 'files/MBQWRQA.jpg', 0.201951, 1.86174], ['CEHHDO5', 'files/CEHHDO5.jpg', 0.514178, 1.5428], ['XJ774DB', 'files/XJ774DB.jpg', 2.46232, -0.393847], ['NR0FMT2', 'files/NR0FMT2.jpg', -0.525583, 2.58906], ['5UTF2L4', 'files/5UTF2L4.png', 0.208258, 1.85312], ['00ELB0I', 'files/00ELB0I.jpg', -0.057343, 2.11819]]
-None
-[['MBQWRQA', 'files/MBQWRQA.jpg', 0.201951, 1.86174], ['CEHHDO5', 'files/CEHHDO5.jpg', 0.514178, 1.5428], ['XJ774DB', 'files/XJ774DB.jpg', 2.46232, -0.393847], ['NR0FMT2', 'files/NR0FMT2.jpg', -0.525583, 2.58906], ['5UTF2L4', 'files/5UTF2L4.png', 0.208258, 1.85312], ['00ELB0I', 'files/00ELB0I.jpg', -0.057343, 2.11819]]
-None
-[['MBQWRQA', 'files/MBQWRQA.jpg', 0.201951, 1.86174], ['CEHHDO5', 'files/CEHHDO5.jpg', 0.514178, 1.5428], ['XJ774DB', 'files/XJ774DB.jpg', 2.46232, -0.393847], ['NR0FMT2', 'files/NR0FMT2.jpg', -0.525583, 2.58906], ['5UTF2L4', 'files/5UTF2L4.png', 0.208258, 1.85312], ['00ELB0I', 'files/00ELB0I.jpg', -0.057343, 2.11819]]
-[2018-12-01 07:22:24 +0000] [12741] [INFO] Shutting down: Master
-[2018-12-01 07:22:25 +0000] [17037] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:22:25 +0000] [17037] [INFO] Listening at: http://127.0.0.1:8000 (17037)
-[2018-12-01 07:22:25 +0000] [17037] [INFO] Using worker: sync
-[2018-12-01 07:22:25 +0000] [17041] [INFO] Booting worker with pid: 17041
-[2018-12-01 07:22:25 +0000] [17041] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 92
-    if ext != ".png" or ext != ".jpg" or ext != ".jpeg"
-                                                      ^
-SyntaxError: invalid syntax
-[2018-12-01 07:22:25 +0000] [17041] [INFO] Worker exiting (pid: 17041)
-[2018-12-01 07:22:25 +0000] [17037] [INFO] Shutting down: Master
-[2018-12-01 07:22:25 +0000] [17037] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:22:27 +0000] [17042] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:22:27 +0000] [17042] [INFO] Listening at: http://127.0.0.1:8000 (17042)
-[2018-12-01 07:22:27 +0000] [17042] [INFO] Using worker: sync
-[2018-12-01 07:22:27 +0000] [17046] [INFO] Booting worker with pid: 17046
-[2018-12-01 07:22:27 +0000] [17046] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 92
-    if ext != ".png" or ext != ".jpg" or ext != ".jpeg"
-                                                      ^
-SyntaxError: invalid syntax
-[2018-12-01 07:22:27 +0000] [17046] [INFO] Worker exiting (pid: 17046)
-[2018-12-01 07:22:27 +0000] [17042] [INFO] Shutting down: Master
-[2018-12-01 07:22:27 +0000] [17042] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:22:29 +0000] [17047] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:22:29 +0000] [17047] [INFO] Listening at: http://127.0.0.1:8000 (17047)
-[2018-12-01 07:22:29 +0000] [17047] [INFO] Using worker: sync
-[2018-12-01 07:22:29 +0000] [17051] [INFO] Booting worker with pid: 17051
-[2018-12-01 07:22:29 +0000] [17051] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 92
-    if ext != ".png" or ext != ".jpg" or ext != ".jpeg"
-                                                      ^
-SyntaxError: invalid syntax
-[2018-12-01 07:22:29 +0000] [17051] [INFO] Worker exiting (pid: 17051)
-[2018-12-01 07:22:29 +0000] [17047] [INFO] Shutting down: Master
-[2018-12-01 07:22:29 +0000] [17047] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:22:32 +0000] [17052] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:22:32 +0000] [17052] [INFO] Listening at: http://127.0.0.1:8000 (17052)
-[2018-12-01 07:22:32 +0000] [17052] [INFO] Using worker: sync
-[2018-12-01 07:22:32 +0000] [17056] [INFO] Booting worker with pid: 17056
-[2018-12-01 07:22:32 +0000] [17056] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 92
-    if ext != ".png" or ext != ".jpg" or ext != ".jpeg"
-                                                      ^
-SyntaxError: invalid syntax
-[2018-12-01 07:22:32 +0000] [17056] [INFO] Worker exiting (pid: 17056)
-[2018-12-01 07:22:32 +0000] [17052] [INFO] Shutting down: Master
-[2018-12-01 07:22:32 +0000] [17052] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:11 +0000] [17082] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:11 +0000] [17082] [INFO] Listening at: http://127.0.0.1:8000 (17082)
-[2018-12-01 07:23:11 +0000] [17082] [INFO] Using worker: sync
-[2018-12-01 07:23:11 +0000] [17086] [INFO] Booting worker with pid: 17086
-[2018-12-01 07:23:11 +0000] [17086] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 239
-    def test:
-            ^
-SyntaxError: invalid syntax
-[2018-12-01 07:23:11 +0000] [17086] [INFO] Worker exiting (pid: 17086)
-[2018-12-01 07:23:11 +0000] [17082] [INFO] Shutting down: Master
-[2018-12-01 07:23:11 +0000] [17082] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:12 +0000] [17092] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:12 +0000] [17092] [INFO] Listening at: http://127.0.0.1:8000 (17092)
-[2018-12-01 07:23:12 +0000] [17092] [INFO] Using worker: sync
-[2018-12-01 07:23:12 +0000] [17096] [INFO] Booting worker with pid: 17096
-[2018-12-01 07:23:12 +0000] [17096] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 239
-    def test:
-            ^
-SyntaxError: invalid syntax
-[2018-12-01 07:23:12 +0000] [17096] [INFO] Worker exiting (pid: 17096)
-[2018-12-01 07:23:12 +0000] [17092] [INFO] Shutting down: Master
-[2018-12-01 07:23:12 +0000] [17092] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:14 +0000] [17097] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:14 +0000] [17097] [INFO] Listening at: http://127.0.0.1:8000 (17097)
-[2018-12-01 07:23:14 +0000] [17097] [INFO] Using worker: sync
-[2018-12-01 07:23:14 +0000] [17101] [INFO] Booting worker with pid: 17101
-[2018-12-01 07:23:14 +0000] [17101] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 239
-    def test:
-            ^
-SyntaxError: invalid syntax
-[2018-12-01 07:23:14 +0000] [17101] [INFO] Worker exiting (pid: 17101)
-[2018-12-01 07:23:14 +0000] [17097] [INFO] Shutting down: Master
-[2018-12-01 07:23:14 +0000] [17097] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:17 +0000] [17105] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:17 +0000] [17105] [INFO] Listening at: http://127.0.0.1:8000 (17105)
-[2018-12-01 07:23:17 +0000] [17105] [INFO] Using worker: sync
-[2018-12-01 07:23:17 +0000] [17109] [INFO] Booting worker with pid: 17109
-[2018-12-01 07:23:17 +0000] [17109] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 239
-    def test:
-            ^
-SyntaxError: invalid syntax
-[2018-12-01 07:23:17 +0000] [17109] [INFO] Worker exiting (pid: 17109)
-[2018-12-01 07:23:17 +0000] [17105] [INFO] Shutting down: Master
-[2018-12-01 07:23:17 +0000] [17105] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:47 +0000] [17126] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:47 +0000] [17126] [INFO] Listening at: http://127.0.0.1:8000 (17126)
-[2018-12-01 07:23:47 +0000] [17126] [INFO] Using worker: sync
-[2018-12-01 07:23:47 +0000] [17130] [INFO] Booting worker with pid: 17130
-[2018-12-01 07:23:47 +0000] [17130] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 265
-    conf_score = abs(scores[0] - scores[1])
-    ^
-IndentationError: unexpected indent
-[2018-12-01 07:23:47 +0000] [17130] [INFO] Worker exiting (pid: 17130)
-[2018-12-01 07:23:47 +0000] [17126] [INFO] Shutting down: Master
-[2018-12-01 07:23:47 +0000] [17126] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:48 +0000] [17136] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:48 +0000] [17136] [INFO] Listening at: http://127.0.0.1:8000 (17136)
-[2018-12-01 07:23:48 +0000] [17136] [INFO] Using worker: sync
-[2018-12-01 07:23:48 +0000] [17140] [INFO] Booting worker with pid: 17140
-[2018-12-01 07:23:48 +0000] [17140] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 265
-    conf_score = abs(scores[0] - scores[1])
-    ^
-IndentationError: unexpected indent
-[2018-12-01 07:23:48 +0000] [17140] [INFO] Worker exiting (pid: 17140)
-[2018-12-01 07:23:48 +0000] [17136] [INFO] Shutting down: Master
-[2018-12-01 07:23:48 +0000] [17136] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:50 +0000] [17141] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:50 +0000] [17141] [INFO] Listening at: http://127.0.0.1:8000 (17141)
-[2018-12-01 07:23:50 +0000] [17141] [INFO] Using worker: sync
-[2018-12-01 07:23:50 +0000] [17145] [INFO] Booting worker with pid: 17145
-[2018-12-01 07:23:50 +0000] [17145] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 265
-    conf_score = abs(scores[0] - scores[1])
-    ^
-IndentationError: unexpected indent
-[2018-12-01 07:23:50 +0000] [17145] [INFO] Worker exiting (pid: 17145)
-[2018-12-01 07:23:50 +0000] [17141] [INFO] Shutting down: Master
-[2018-12-01 07:23:50 +0000] [17141] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:23:53 +0000] [17146] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:23:53 +0000] [17146] [INFO] Listening at: http://127.0.0.1:8000 (17146)
-[2018-12-01 07:23:53 +0000] [17146] [INFO] Using worker: sync
-[2018-12-01 07:23:53 +0000] [17150] [INFO] Booting worker with pid: 17150
-[2018-12-01 07:23:53 +0000] [17150] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
-    self.load_wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
-    return self.load_wsgiapp()
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/opt/anaconda2/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
-    __import__(module)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 265
-    conf_score = abs(scores[0] - scores[1])
-    ^
-IndentationError: unexpected indent
-[2018-12-01 07:23:53 +0000] [17150] [INFO] Worker exiting (pid: 17150)
-[2018-12-01 07:23:53 +0000] [17146] [INFO] Shutting down: Master
-[2018-12-01 07:23:53 +0000] [17146] [INFO] Reason: Worker failed to boot.
-[2018-12-01 07:24:56 +0000] [17176] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:24:56 +0000] [17176] [INFO] Listening at: http://127.0.0.1:8000 (17176)
-[2018-12-01 07:24:56 +0000] [17176] [INFO] Using worker: sync
-[2018-12-01 07:24:56 +0000] [17180] [INFO] Booting worker with pid: 17180
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:24:58.099081: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:24:58.099913: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:25:03,297] ERROR in app: Exception on /test [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 248, in test
-    (minRow, maxRow)
-NameError: global name 'minRow' is not defined
-[2018-12-01 07:25:59 +0000] [17176] [INFO] Handling signal: term
-[2018-12-01 07:25:59 +0000] [17180] [INFO] Worker exiting (pid: 17180)
-[2018-12-01 07:25:59 +0000] [17176] [INFO] Shutting down: Master
-[2018-12-01 07:26:01 +0000] [17293] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:26:01 +0000] [17293] [INFO] Listening at: http://127.0.0.1:8000 (17293)
-[2018-12-01 07:26:01 +0000] [17293] [INFO] Using worker: sync
-[2018-12-01 07:26:01 +0000] [17297] [INFO] Booting worker with pid: 17297
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:26:02.552183: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:26:02.553467: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:26:43 +0000] [17293] [INFO] Handling signal: term
-[2018-12-01 07:26:43 +0000] [17297] [INFO] Worker exiting (pid: 17297)
-[2018-12-01 07:26:43 +0000] [17293] [INFO] Shutting down: Master
-[2018-12-01 07:26:44 +0000] [17400] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:26:44 +0000] [17400] [INFO] Listening at: http://127.0.0.1:8000 (17400)
-[2018-12-01 07:26:44 +0000] [17400] [INFO] Using worker: sync
-[2018-12-01 07:26:44 +0000] [17409] [INFO] Booting worker with pid: 17409
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:26:45.897966: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:26:45.899183: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:27:16 +0000] [17400] [INFO] Handling signal: term
-[2018-12-01 07:27:16 +0000] [17409] [INFO] Worker exiting (pid: 17409)
-[2018-12-01 07:27:17 +0000] [17400] [INFO] Shutting down: Master
-[2018-12-01 07:27:18 +0000] [17511] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:27:18 +0000] [17511] [INFO] Listening at: http://127.0.0.1:8000 (17511)
-[2018-12-01 07:27:18 +0000] [17511] [INFO] Using worker: sync
-[2018-12-01 07:27:18 +0000] [17521] [INFO] Booting worker with pid: 17521
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:27:19.488037: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:27:19.489269: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:31:03 +0000] [17511] [INFO] Handling signal: term
-[2018-12-01 07:31:03 +0000] [17521] [INFO] Worker exiting (pid: 17521)
-[2018-12-01 07:31:03 +0000] [17511] [INFO] Shutting down: Master
-[2018-12-01 07:31:05 +0000] [17644] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:31:05 +0000] [17644] [INFO] Listening at: http://127.0.0.1:8000 (17644)
-[2018-12-01 07:31:05 +0000] [17644] [INFO] Using worker: sync
-[2018-12-01 07:31:05 +0000] [17652] [INFO] Booting worker with pid: 17652
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:31:06.360291: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:31:06.361500: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:32:49 +0000] [17644] [INFO] Handling signal: term
-[2018-12-01 07:32:49 +0000] [17652] [INFO] Worker exiting (pid: 17652)
-[2018-12-01 07:32:49 +0000] [17644] [INFO] Shutting down: Master
-[2018-12-01 07:32:50 +0000] [17758] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:32:50 +0000] [17758] [INFO] Listening at: http://127.0.0.1:8000 (17758)
-[2018-12-01 07:32:50 +0000] [17758] [INFO] Using worker: sync
-[2018-12-01 07:32:50 +0000] [17767] [INFO] Booting worker with pid: 17767
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:32:51.883053: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:32:51.884276: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 07:33:19,924] ERROR in app: Exception on /test [GET]
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/SeeFood-Server/index.py", line 248, in test
-    data['path'] = '3.16.73.99/files/' + image[1] + image[2]
-TypeError: cannot concatenate 'str' and 'float' objects
-[2018-12-01 07:35:52 +0000] [17758] [INFO] Handling signal: term
-[2018-12-01 07:35:52 +0000] [17767] [INFO] Worker exiting (pid: 17767)
-looking for food in files/MAZGGH3.jpg
-looking for food in files/MAZGGH3.jpg
-looking for food in files/6TBW9WG.jpg
-looking for food in files/6TBW9WG.jpg
-looking for food in files/F95X3MG.jpg
-looking for food in files/F95X3MG.jpg
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)]]
-[2018-12-01 07:35:52 +0000] [17758] [INFO] Shutting down: Master
-[2018-12-01 07:35:53 +0000] [17889] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 07:35:53 +0000] [17889] [INFO] Listening at: http://127.0.0.1:8000 (17889)
-[2018-12-01 07:35:53 +0000] [17889] [INFO] Using worker: sync
-[2018-12-01 07:35:53 +0000] [17893] [INFO] Booting worker with pid: 17893
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 07:35:54.994429: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 07:35:54.995606: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 08:17:07 +0000] [17889] [INFO] Handling signal: term
-[2018-12-01 08:17:07 +0000] [17893] [INFO] Worker exiting (pid: 17893)
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)]]
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)]]
-looking for food in files/LXCNAJN.jpg
-looking for food in files/LXCNAJN.jpg
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)], [4L, 'LXCNAJN', '.jpg', 2.52356, -0.455011, datetime.datetime(2018, 12, 1, 8, 6, 52)]]
-looking for food in files/DSMT72N.jpg
-looking for food in files/DSMT72N.jpg
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)], [4L, 'LXCNAJN', '.jpg', 2.52356, -0.455011, datetime.datetime(2018, 12, 1, 8, 6, 52)], [5L, 'DSMT72N', '.jpg', -0.354013, 2.41616, datetime.datetime(2018, 12, 1, 8, 11, 48)]]
-[2018-12-01 08:17:07 +0000] [17889] [INFO] Shutting down: Master
-[2018-12-01 08:17:09 +0000] [18193] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 08:17:09 +0000] [18193] [INFO] Listening at: http://127.0.0.1:8000 (18193)
-[2018-12-01 08:17:09 +0000] [18193] [INFO] Using worker: sync
-[2018-12-01 08:17:09 +0000] [18200] [INFO] Booting worker with pid: 18200
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 08:17:10.456651: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 08:17:10.457907: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 08:32:09 +0000] [18193] [INFO] Handling signal: term
-[2018-12-01 08:32:09 +0000] [18200] [INFO] Worker exiting (pid: 18200)
-None
-[[1L, 'MAZGGH3', '.jpg', 0.201951, 1.86174, datetime.datetime(2018, 12, 1, 7, 32, 56)], [2L, '6TBW9WG', '.jpg', 2.46232, -0.393847, datetime.datetime(2018, 12, 1, 7, 33)], [3L, 'F95X3MG', '.jpg', 0.514178, 1.5428, datetime.datetime(2018, 12, 1, 7, 33, 5)], [4L, 'LXCNAJN', '.jpg', 2.52356, -0.455011, datetime.datetime(2018, 12, 1, 8, 6, 52)], [5L, 'DSMT72N', '.jpg', -0.354013, 2.41616, datetime.datetime(2018, 12, 1, 8, 11, 48)]]
-[2018-12-01 08:32:10 +0000] [18193] [INFO] Shutting down: Master
-[2018-12-01 08:32:11 +0000] [18379] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 08:32:11 +0000] [18379] [INFO] Listening at: http://127.0.0.1:8000 (18379)
-[2018-12-01 08:32:11 +0000] [18379] [INFO] Using worker: sync
-[2018-12-01 08:32:11 +0000] [18383] [INFO] Booting worker with pid: 18383
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 08:32:12.547107: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 08:32:12.548367: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-[2018-12-01 08:50:27 +0000] [18379] [INFO] Handling signal: term
-[2018-12-01 08:50:27 +0000] [18383] [INFO] Worker exiting (pid: 18383)
-[2018-12-01 08:50:28 +0000] [18379] [INFO] Shutting down: Master
-[2018-12-01 08:50:29 +0000] [18562] [INFO] Starting gunicorn 19.9.0
-[2018-12-01 08:50:29 +0000] [18562] [INFO] Listening at: http://127.0.0.1:8000 (18562)
-[2018-12-01 08:50:29 +0000] [18562] [INFO] Using worker: sync
-[2018-12-01 08:50:29 +0000] [18566] [INFO] Booting worker with pid: 18566
-/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-2018-12-01 08:50:30.380351: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2018-12-01 08:50:30.381637: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2018-12-03 21:09:33.139169: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-12-03 21:09:33.143133: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.

@@ -14,6 +14,8 @@ import os
 from find_food import findFood
 import numpy as np
 import json
+import PIL
+from PIL import Image
 
 # Initialize the Flask application
 application = Flask(__name__)
@@ -42,8 +44,8 @@ def upload_file():
 	if minRow is not None and maxRow is not None:
         	return filesFromDB(minRow, maxRow)
 	else:
-		return filesFromDB()	
-        
+		return filesFromDB()
+
 @application.route('/stats', methods=['GET'])
 def stats():
 	if request.method == 'GET':
@@ -75,10 +77,17 @@ def fileToDB(file):
         while os.path.exists(path):
             path = 'files/' + generate_id()
         try:
-            file.save(path)
-        except:
+	    file.save(path)
+	    basewidth = 300
+	    image = Image.open(path).convert('RGB')
+	    wpercent = (basewidth / float(image.size[0]))
+	    hsize = int((float(image.size[1]) * float(wpercent)))
+	    image = image.resize((basewidth, hsize), Image.BILINEAR)
+	    image.save(path, "JPEG")
+        except Exception as e:
             db.close()
             cursor.close()
+	    print(e)
             return "Couldn't save for some dang reason"
         scores = findFood(path)
         conf_score = abs(scores[0,0] - scores[0,1])
@@ -213,7 +222,9 @@ def statsFromDB():
 	        "highNoAll": highNoAllCount,
 	        "lowYesAll": lowYesAllCount,
 		"modYesAll": modYesAllCount,
-		"highYesAll": highYesAllCount
+		"highYesAll": highYesAllCount,
+		"numYesAllTime": lowYesAllCount + modYesAllCount + highYesAllCount,
+		"numNoAllTime": lowNoAllCount + modNoAllCount + highNoAllCount
 		})
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
