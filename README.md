@@ -42,4 +42,23 @@ The ability to run Shell and Python files.<br/>
 * **Aaron Hammer** - *Developed* - [aar118](https://github.com/aar118)<br/>
 * **Trevor Konya** - *Developed* - [tkonya](https://github.com/tkonya)<br/>
 * **Isaiah Winfrey** - *Developed* [iWinfrey](https://github.com/iWinfrey)<br/>
-* **Madison Yancey** - *Developed* [madison-yancey](https://github.com/madison-yancey)
+* **Madison Yancey** - *Developed* [madison-yancey](https://github.com/madison-yancey)<br/>
+
+## Project Structure
+
+**index.py**<br/>
+This is where the magic happens. All of the server requests, including uploading images, downloading images, and getting stats, are contained in this file.<br/>
+**find_food.py**<br/>
+This is where index.py passes images to do classification with the AI.<br/>
+**mysql.py**<br/>
+This makes it easy to initialize the MySQL database.<br/>
+**deleteAll.py**<br/>
+This makes it easy to delete all images and MySQL references.<br/>
+**server.sh**<br/>
+This downloads plugins/libraries needed for the server, and starts up a Flask development server.<br/>
+**files/**<br/>
+This contains all of the images that have been classified.<br/>
+**logs/**<br/>
+This contains gunicorn and nginx debug logs. This is seriously helpful.<br/>
+**seefood/**<br/>
+This contains the AI that classifies images.
