@@ -46,19 +46,11 @@ The ability to run Shell and Python files.<br/>
 
 ## Project Structure
 
-**index.py**<br/>
-This is where the magic happens. All of the server requests, including uploading images, downloading images, and getting stats, are contained in this file.<br/>
-**find_food.py**<br/>
-This is where index.py passes images to do classification with the AI.<br/>
-**mysql.py**<br/>
-This makes it easy to initialize the MySQL database.<br/>
-**deleteAll.py**<br/>
-This makes it easy to delete all images and MySQL references.<br/>
-**server.sh**<br/>
-This downloads plugins/libraries needed for the server, and starts up a Flask development server.<br/>
-**files/**<br/>
-This contains all of the images that have been classified.<br/>
-**logs/**<br/>
-This contains gunicorn and nginx debug logs. This is seriously helpful.<br/>
-**seefood/**<br/>
-This contains the AI that classifies images.
+* **index.py** - This is where the magic happens. All of the server requests, including uploading images, downloading images, and getting stats, are contained in this file.<br/>
+* **find_food.py** - This is where index.py passes images to do classification with the AI.<br/>
+* **mysql.py** - This makes it easy to initialize the MySQL database.<br/>
+* **deleteAll.py** - This makes it easy to delete all images and MySQL references.<br/>
+* **server.sh** - This downloads plugins/libraries needed for the server, and starts up a Flask development server.<br/>
+* **files/** - This contains all of the images that have been classified.<br/>
+* **logs/** - This contains gunicorn and nginx debug logs. This is seriously helpful.<br/>
+* **seefood/** - This contains the AI that classifies images.
